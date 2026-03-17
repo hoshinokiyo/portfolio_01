@@ -6,6 +6,35 @@
   <title>企画提案書 -  プロジェクトアーカイブ</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .analysis-table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 14px;
+    }
+
+    .analysis-3c-table {
+      min-width: 840px;
+    }
+
+    .analysis-3c-table th,
+    .analysis-3c-table td {
+      vertical-align: top;
+      line-height: 1.85;
+    }
+
+    .analysis-3c-table th:first-child,
+    .analysis-3c-table td:first-child {
+      width: 22%;
+    }
+
+    .analysis-3c-table th:nth-child(2),
+    .analysis-3c-table td:nth-child(2),
+    .analysis-3c-table th:nth-child(3),
+    .analysis-3c-table td:nth-child(3) {
+      width: 39%;
+    }
+  </style>
 </head>
 <body>
   <button class="hamburger" aria-label="メニュー">
@@ -50,10 +79,11 @@
           <ol class="toc-list">
             <li><a href="#sec1">プロジェクト概要</a></li>
             <li><a href="#sec2">背景と課題</a></li>
-            <li><a href="#sec3">提案するソリューション</a></li>
-            <li><a href="#sec4">制作範囲</a></li>
-            <li><a href="#sec5">使用技術</a></li>
-            <li><a href="#sec6">スケジュール</a></li>
+            <li><a href="#sec3">3C分析</a></li>
+            <li><a href="#sec4">提案するソリューション</a></li>
+            <li><a href="#sec5">制作範囲</a></li>
+            <li><a href="#sec6">使用技術</a></li>
+            <li><a href="#sec7">スケジュール</a></li>
           </ol>
         </div>
 
@@ -64,21 +94,25 @@
           <div class="fill-label">サービス名 <span class="required">必須</span></div>
           <div class="fill-hint">制作するWebサービスの名前</div>
           <div class="fill-content">
-            <p>（サービス名を入力）</p>
+            <p>ひととなり.ai</p>
           </div>
         </div>
         <div class="fill-block">
           <div class="fill-label">コンセプト <span class="required">必須</span></div>
           <div class="fill-hint">サービスを一言で表す説明（キャッチコピー＋1〜2文の説明）</div>
           <div class="fill-content">
-            <p>（キャッチコピーとコンセプト説明を入力）</p>
+            <p>履歴書では見えない人へ</p>
+            <p>ひととなり.ai は、履歴書や職務経歴書だけでは伝わらない「人となり」を可視化する採用支援サービスです。</p>
+            <p>求職者の価値観や仕事観、経験の背景などをプロフィールやストーリーとして伝えることで、企業が候補者の人物像を深く理解できる採用体験を提供します。</p>
           </div>
         </div>
         <div class="fill-block">
           <div class="fill-label">ターゲットユーザー <span class="required">必須</span></div>
           <div class="fill-hint">このサービスを使う主なユーザー像（概要レベル）</div>
           <div class="fill-content">
-            <p>（ターゲットユーザーの概要を入力）</p>
+            <p>本サービスの主なユーザーは、<strong>中途採用を担当する企業の人事・採用担当者（35〜45歳）</strong>です。</p>
+            <p>多くの採用担当者は、履歴書や職務経歴書だけでは候補者の人柄や価値観を十分に理解できず、面接後にミスマッチが発生することに課題を感じています。</p>
+            <p>また、サブユーザーとして、ミドル層の求職者を想定しています。特に、スキルや肩書きだけでは魅力が伝わりにくい人が、自分の価値観や仕事への姿勢を伝えられる場として利用することを想定しています。</p>
           </div>
         </div>
 
@@ -91,54 +125,165 @@
           <div class="fill-label">市場の現状 <span class="required">必須</span></div>
           <div class="fill-hint">このサービスが存在する市場の現状と課題</div>
           <div class="fill-content">
-            <p>（市場の現状を記載）</p>
+            <p>人材紹介・人材サービス業界は、少子高齢化による人手不足を背景に市場が拡大しており、特にミドル層採用の重要性が高まっています。</p>
+            <p>一方で、多くの採用サービスはスキルや経歴を中心とした情報提供が主であり、求職者の価値観や人柄などの人物情報が十分に伝わらないという課題があります。</p>
+            <p>その結果、採用後のミスマッチや早期離職につながるケースも少なくありません。</p>
           </div>
         </div>
         <div class="fill-block">
           <div class="fill-label">解決すべき課題 <span class="required">必須</span></div>
           <div class="fill-hint">本プロジェクトで解決を目指す具体的な課題（3つ程度）</div>
           <div class="fill-content">
-            <p>（課題を3つ入力）</p>
+            <p><strong>課題1</strong></p>
+            <p><strong>履歴書だけでは人物像が分からない</strong></p>
+            <p>履歴書や職務経歴書はスキルや経歴の情報が中心であり、候補者の価値観や仕事観、人柄などが十分に伝わらないため、採用担当は人物理解が不十分なまま選考を進めてしまうことがあります。</p>
+            <p><strong>課題2</strong></p>
+            <p><strong>採用ミスマッチの発生</strong></p>
+            <p>既存の転職サービスでは、スキルや条件を中心としたマッチングが多く、企業文化や働き方の価値観との相性が十分に考慮されない場合があります。その結果、採用後にミスマッチが発生し、早期離職につながることがあります。</p>
+            <p><strong>課題3</strong></p>
+            <p><strong>採用判断に必要な情報不足</strong></p>
+            <p>採用担当は多くの候補者を短時間で判断する必要がありますが、既存サービスでは人物理解のための情報が不足しており、面接前に十分な判断材料を得ることが難しいという課題があります。</p>
           </div>
         </div>
 
         </section>
 
         <section class="section" id="sec3">
-          <h2 class="section-title"><span class="section-icon">3</span> 提案するソリューション</h2>
+          <h2 class="section-title"><span class="section-icon">3</span> 3C分析</h2>
 
         <div class="fill-block">
-          <div class="fill-label">サービスの特長 <span class="required">必須</span></div>
-          <div class="fill-hint">競合と差別化するサービスの特長を3つ</div>
+          <div class="fill-label">3C分析 <span class="required">必須</span></div>
+          <div class="fill-hint">Customer（顧客）・Competitor（競合）・Company（自社）を、採用担当視点と転職者視点の両方から整理した比較表</div>
           <div class="fill-content">
-            <p>（サービスの特長を3つ記載）</p>
+            <p>本サービスは、採用担当と転職者の双方に価値を提供するため、3C分析も両視点で整理した。</p>
+            <div class="analysis-table-wrap">
+              <table class="doc-table analysis-3c-table">
+                <thead>
+                  <tr>
+                    <th>項目</th>
+                    <th>採用担当視点</th>
+                    <th>転職者視点</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Customer（顧客）</strong></td>
+                    <td>35〜45歳の企業の人事・採用担当者。履歴書や職務経歴書だけでは候補者の人柄や価値観が分かりにくく、面接後のミスマッチや早期離職に悩んでいる。限られた時間で人物理解を深め、採用判断の精度を高めたいと考えている。</td>
+                    <td>自分のスキルや経歴だけでなく、人柄や価値観、仕事への姿勢なども企業に伝えたい転職者・求職者。特にミドル層では、書類だけでは自分の魅力が伝わりにくく、自分に合う企業との出会いを求めている。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Competitor（競合）</strong></td>
+                    <td>Wantedly、ビズリーチ、エンミドルの転職など。求人情報やスカウト機能は充実しているが、候補者の人物像や価値観、仕事への考え方などを面接前に深く理解する仕組みは限定的である。</td>
+                    <td>Wantedly、ビズリーチ、エンミドルの転職など。求人機会は得やすいが、スキルや経歴中心の設計が多く、自分の価値観やキャリアの背景、人柄などを十分に表現できる場は少ない。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Company（自社）</strong></td>
+                    <td>「人となりプロフィール」や「ストーリー」「ポートフォリオ」を通じて、採用担当が面接前に候補者の人物像を理解できる仕組みを提供する。スキルだけでなく価値観や相性も含めた採用判断を支援し、ミスマッチの少ない採用につなげる。</td>
+                    <td>「人となり」や経験の背景をストーリー形式で表現できるため、履歴書では伝わらない価値観や仕事観を企業に伝えやすい。自分らしさを表現しながら、相性の良い企業と出会いやすくなる。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
         </section>
 
         <section class="section" id="sec4">
-          <h2 class="section-title"><span class="section-icon">4</span> 制作範囲</h2>
+          <h2 class="section-title"><span class="section-icon">4</span> 提案するソリューション</h2>
 
         <div class="fill-block">
-          <div class="fill-label">Webサイト（フロントエンド）の範囲 <span class="required">必須</span></div>
-          <div class="fill-hint">制作するWebサイトのページ一覧と概要</div>
+          <div class="fill-label">サービスの特長 <span class="required">必須</span></div>
+          <div class="fill-hint">競合と差別化するサービスの特長を3つ</div>
           <div class="fill-content">
-            <p>（Webサイトのページ一覧を記載）</p>
-          </div>
-        </div>
-        <div class="fill-block">
-          <div class="fill-label">Webアプリケーション（サーバーサイド）の範囲 <span class="required">必須</span></div>
-          <div class="fill-hint">制作するWebアプリケーションの機能概要</div>
-          <div class="fill-content">
-            <p>（Webアプリの機能一覧を記載）</p>
+            <p><strong>① 人となりの可視化</strong></p>
+            <p>履歴書では伝わりにくい価値観、仕事観、経験の背景などをプロフィールやストーリー形式で紹介することで、候補者の人物像を立体的に理解できる仕組みを提供します。</p>
+            <p><strong>② ミドル層の魅力発見</strong></p>
+            <p>年齢や経歴だけでは評価されにくいミドル層の求職者が、これまでの経験や仕事への姿勢、人柄を伝えられる場を提供します。</p>
+            <p><strong>③ 相性まで見える採用</strong></p>
+            <p>スキルや経歴だけでなく、価値観や働き方の考え方も判断材料として可視化することで、企業と求職者の相性を考慮した採用判断を支援します。</p>
           </div>
         </div>
 
         </section>
 
         <section class="section" id="sec5">
-          <h2 class="section-title"><span class="section-icon">5</span> 使用技術</h2>
+          <h2 class="section-title"><span class="section-icon">5</span> 制作範囲</h2>
+
+        <div class="fill-block">
+          <div class="fill-label">Webサイト（フロントエンド）の範囲 <span class="required">必須</span></div>
+          <div class="fill-hint">制作するWebサイトのページ一覧と概要</div>
+          <div class="fill-content">
+            <p><strong>① トップページ</strong></p>
+            <p>ページの目的: サービスのコンセプトを伝え、採用担当と転職者の双方に興味を持ってもらう。</p>
+            <p>主要コンテンツ: キャッチコピー、サービス概要、サービスの特長（人となりプロフィール等）、利用の流れ、新着プロフィール紹介、会員登録・ログイン導線</p>
+            <p><strong>② サービス紹介ページ</strong></p>
+            <p>ページの目的: サービスの目的や仕組み、既存サービスとの違いを理解してもらう。</p>
+            <p>主要コンテンツ: サービスコンセプト、解決する課題、主な特長、利用メリット、他サービスとの違い</p>
+            <p><strong>③ 転職者プロフィール一覧ページ</strong></p>
+            <p>ページの目的: 採用担当が転職者を検索・閲覧できるようにする。</p>
+            <p>主要コンテンツ: 転職者プロフィールカード一覧、職種・経験・スキルなどの検索／フィルター、おすすめ人材、プロフィール詳細ページへのリンク</p>
+            <p><strong>④ 転職者プロフィール詳細ページ</strong></p>
+            <p>ページの目的: 採用担当が転職者の人柄や価値観を理解できるようにする。</p>
+            <p>主要コンテンツ: 自己紹介、人となり（価値観・仕事観）、経歴・スキル、キャリアの希望、ポートフォリオへのリンク、面談・問い合わせ導線</p>
+            <p><strong>⑤ ひととなりストーリーページ</strong></p>
+            <p>ページの目的: 転職者の経験や価値観をストーリー形式で紹介し、人物理解を深める。</p>
+            <p>主要コンテンツ: キャリアストーリー、仕事への価値観、人生の転機、インタビュー形式コンテンツ</p>
+            <p><strong>⑥ ポートフォリオページ</strong></p>
+            <p>ページの目的: 転職者の制作物や実績を通じて、スキルや思考プロセスを伝える。</p>
+            <p>主要コンテンツ: 制作物・実績一覧、プロジェクト概要、担当範囲、課題と解決方法、工夫したポイント、学びや振り返り</p>
+            <p><strong>⑦ 転職者登録・プロフィール作成ページ</strong></p>
+            <p>ページの目的: 転職者が自分のプロフィールやポートフォリオを登録・編集できるようにする。</p>
+            <p>主要コンテンツ: アカウント登録、プロフィール入力フォーム、人となり・価値観入力、ポートフォリオ登録、プレビュー機能</p>
+            <p><strong>⑧ 採用担当向け利用ガイドページ</strong></p>
+            <p>ページの目的: 採用担当がサービスの使い方や活用方法を理解できるようにする。</p>
+            <p>主要コンテンツ: サービス利用方法、人材検索方法、面談依頼の流れ、活用事例</p>
+            <p><strong>⑨ お問い合わせページ</strong></p>
+            <p>ページの目的: ユーザーからの質問やサポート依頼を受け付ける。</p>
+            <p>主要コンテンツ: 問い合わせフォーム、よくある質問、サポート連絡先</p>
+            <p><strong>UXの流れ（このサービスの体験）</strong></p>
+            <p>採用担当は、トップ → プロフィール一覧（人を探す）→ プロフィール詳細（人となりを見る）→ ストーリー / ポートフォリオ（深く理解）→ 面談、という流れで利用します。</p>
+          </div>
+        </div>
+        <div class="fill-block">
+          <div class="fill-label">Webアプリケーション（サーバーサイド）の範囲 <span class="required">必須</span></div>
+          <div class="fill-hint">制作するWebアプリケーションの機能概要</div>
+          <div class="fill-content">
+            <p>管理システム（管理者側）として、サービス運営・安全性・品質管理を考えて整理しました。</p>
+            <p><strong>① ユーザー管理</strong></p>
+            <p>概要: 転職者と採用担当ユーザーのアカウント情報を一覧・検索・編集・停止できる機能。ユーザーの状態を管理する。</p>
+            <p>優先度: Must</p>
+            <p><strong>② プロフィール内容管理</strong></p>
+            <p>概要: 転職者が登録したプロフィール（自己紹介・価値観・経歴など）の内容を管理者が確認・編集・非公開にできる機能。</p>
+            <p>優先度: Must</p>
+            <p><strong>③ ポートフォリオ管理</strong></p>
+            <p>概要: 転職者が登録したポートフォリオや制作物を管理者が確認し、不適切な内容の削除や公開設定を管理する機能。</p>
+            <p>優先度: Must</p>
+            <p><strong>④ 通報・違反コンテンツ管理</strong></p>
+            <p>概要: ユーザーから通報されたプロフィールやコンテンツを確認し、内容の確認・警告・削除などの対応を行う機能。</p>
+            <p>優先度: Must</p>
+            <p><strong>⑤ 問い合わせ管理</strong></p>
+            <p>概要: ユーザーから届く問い合わせを管理画面で確認し、返信や対応状況を管理する機能。</p>
+            <p>優先度: Must</p>
+            <p><strong>⑥ コンテンツ管理（お知らせ・記事）</strong></p>
+            <p>概要: トップページのお知らせや特集記事などのコンテンツを管理画面から作成・編集・公開できる機能。</p>
+            <p>優先度: Should</p>
+            <p><strong>⑦ 利用状況・アクセス分析</strong></p>
+            <p>概要: 登録ユーザー数、プロフィール閲覧数、検索数などサービス利用状況を可視化する分析機能。</p>
+            <p>優先度: Should</p>
+            <p><strong>⑧ 検索条件・タグ管理</strong></p>
+            <p>概要: 職種・スキル・タグなど検索条件として使われる項目を管理者が追加・編集できる機能。</p>
+            <p>優先度: Should</p>
+            <p><strong>⑨ メール配信管理</strong></p>
+            <p>概要: 登録ユーザーへサービスのお知らせや更新情報などのメールを配信する機能。</p>
+            <p>優先度: Could</p>
+          </div>
+        </div>
+
+        </section>
+
+        <section class="section" id="sec6">
+          <h2 class="section-title"><span class="section-icon">6</span> 使用技術</h2>
 
 <p style="font-size:13px;color:var(--text-light);margin-bottom:8px;">※ 自分の実際の使用技術に合わせて編集してください</p>
         <table class="doc-table">
@@ -158,23 +303,27 @@
 
         </section>
 
-        <section class="section" id="sec6">
-          <h2 class="section-title"><span class="section-icon">6</span> スケジュール</h2>
+        <section class="section" id="sec7">
+          <h2 class="section-title"><span class="section-icon">7</span> スケジュール</h2>
 
         <table class="doc-table">
           <thead><tr><th>期間</th><th>フェーズ</th><th>内容</th></tr></thead>
           <tbody>
-          <tr class="template-row"><td>Day 1〜3</td><td>企画</td><td>マーケットリサーチ・企画立案</td></tr>
-          <tr class="template-row"><td>Day 4〜5</td><td>設計</td><td>ペルソナ・サイトマップ設計</td></tr>
-          <tr class="template-row"><td>Day 6〜7</td><td>デザイン</td><td>ワイヤーフレーム・デザインガイドライン</td></tr>
-          <tr class="template-row"><td>Day 8〜12</td><td>フロント実装</td><td>HTML/CSS/JavaScript によるWebサイト構築</td></tr>
-          <tr class="template-row"><td>Day 13〜14</td><td>プロジェクトアーカイブ構築</td><td>プロジェクトアーカイブサイト・ドキュメント配置</td></tr>
-          <tr class="template-row"><td>Day 15〜16</td><td>前半完了</td><td>GitHub Pages 公開・前半振り返り</td></tr>
-          <tr class="template-row"><td>Day 17〜19</td><td>バックエンド設計</td><td>仕様書・DB設計書作成</td></tr>
-          <tr class="template-row"><td>Day 20〜24</td><td>バックエンド実装</td><td>Spring Boot アプリケーション開発</td></tr>
-          <tr class="template-row"><td>Day 25〜27</td><td>追加機能</td><td>検索・認証・追加機能の実装</td></tr>
-          <tr class="template-row"><td>Day 28〜29</td><td>テスト</td><td>テスト実施・バグ修正</td></tr>
-          <tr class="template-row"><td>Day 30〜31</td><td>ドキュメント</td><td>振り返り・技術記事・最終調整</td></tr>
+          <tr class="template-row"><td>Day 1〜3</td><td>企画</td><td>人材サービス業界リサーチ・競合分析（Wantedly等）・サービスコンセプト整理</td></tr>
+          <tr class="template-row"><td>Day 4〜5</td><td>企画設計</td><td>ターゲット設定（採用担当）・ペルソナ作成・解決する課題整理</td></tr>
+          <tr class="template-row"><td>Day 6〜7</td><td>情報設計</td><td>サイトマップ作成・ページ構成設計（プロフィール／ポートフォリオなど）</td></tr>
+          <tr class="template-row"><td>Day 8〜9</td><td>UX設計</td><td>ユーザーフロー設計（人を探す→人となりを見る→面談）</td></tr>
+          <tr class="template-row"><td>Day 10〜11</td><td>デザイン</td><td>ワイヤーフレーム作成（トップ・プロフィール・ポートフォリオ等）</td></tr>
+          <tr class="template-row"><td>Day 12〜13</td><td>デザイン</td><td>UIデザイン・デザインガイドライン作成</td></tr>
+          <tr class="template-row"><td>Day 14〜18</td><td>フロント実装</td><td>HTML / CSS / JavaScript によるWebサイト構築</td></tr>
+          <tr class="template-row"><td>Day 19〜20</td><td>フロント実装</td><td>プロフィール一覧・プロフィール詳細ページ実装</td></tr>
+          <tr class="template-row"><td>Day 21〜22</td><td>フロント実装</td><td>ポートフォリオページ・ストーリーページ実装</td></tr>
+          <tr class="template-row"><td>Day 23</td><td>フロント実装</td><td>レスポンシブ対応・UI調整</td></tr>
+          <tr class="template-row"><td>Day 24〜25</td><td>プロジェクトアーカイブ</td><td>プロジェクトアーカイブサイト作成・設計資料整理</td></tr>
+          <tr class="template-row"><td>Day 26</td><td>中間公開</td><td>GitHub Pages 公開・中間振り返り</td></tr>
+          <tr class="template-row"><td>Day 27〜28</td><td>バックエンド設計</td><td>API設計・DB設計（ユーザー・プロフィール・ポートフォリオ）</td></tr>
+          <tr class="template-row"><td>Day 29〜30</td><td>バックエンド実装</td><td>Spring Boot アプリケーション開発</td></tr>
+          <tr class="template-row"><td>Day 31</td><td>テスト</td><td>動作確認・バグ修正</td></tr>
           <tr class="template-row"><td>Day 32</td><td>最終提出</td><td>プロジェクトアーカイブ最終版公開</td></tr>
           </tbody>
         </table>
@@ -188,3 +337,5 @@
   <script src="../js/main.js"></script>
 </body>
 </html>
+
+

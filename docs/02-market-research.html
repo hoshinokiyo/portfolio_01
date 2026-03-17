@@ -3,9 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>マーケットリサーチ -  プロジェクトアーカイブ</title>
+  <title>マーケットリサーチ - プロジェクトアーカイブ</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .comparison-note {
+      margin: 0 0 14px;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .comparison-table {
+      min-width: 760px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      vertical-align: top;
+      line-height: 1.8;
+    }
+
+    .comparison-table th:first-child,
+    .comparison-table td:first-child {
+      width: 22%;
+    }
+
+    .comparison-table th:nth-child(2),
+    .comparison-table td:nth-child(2),
+    .comparison-table th:nth-child(3),
+    .comparison-table td:nth-child(3) {
+      width: 39%;
+    }
+
+    .positioning-map {
+      margin: 12px 0 0;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fbfbf8;
+      color: var(--text);
+      font-size: 13px;
+      line-height: 1.7;
+      white-space: pre;
+    }
+
+    .analysis-table {
+      min-width: 920px;
+    }
+
+    .analysis-table th,
+    .analysis-table td {
+      vertical-align: top;
+      line-height: 1.8;
+    }
+  </style>
 </head>
 <body>
   <button class="hamburger" aria-label="メニュー">
@@ -13,28 +69,27 @@
   </button>
 
   <div class="page-wrapper">
-  <aside class="sidebar" data-nav-level="docs"></aside>
+    <aside class="sidebar" data-nav-level="docs"></aside>
 
     <main class="main-content">
       <header class="doc-header">
         <div class="doc-category">DOCUMENT 02</div>
         <h1 class="doc-title">マーケットリサーチ</h1>
         <div class="doc-meta">
-          <span><span class="material-symbols-outlined icon-sm">calendar_today</span> 作成日：2026-XX-XX</span>
-          <span><span class="material-symbols-outlined icon-sm">person</span> 作成者：（氏名を入力）</span>
+          <span><span class="material-symbols-outlined icon-sm">calendar_today</span> 作成日：2026-03-17</span>
+          <span><span class="material-symbols-outlined icon-sm">person</span> 作成者：Portfolio_01</span>
           <span><span class="material-symbols-outlined icon-sm">push_pin</span> Ver 1.0</span>
         </div>
       </header>
 
       <div class="doc-body">
-
         <div class="external-link-box">
           <div class="external-link-box-title">
             <span class="material-symbols-outlined">link</span>
             詳細ドキュメント（Google スプレッドシート）
           </div>
           <div class="external-link-box-desc">
-            このページは概要のみを記載しています。詳細なマーケットリサーチは以下のリンクからご確認ください。
+            このページは概要版です。詳細なマーケットリサーチを別管理している場合は、以下のリンクから参照できます。
           </div>
           <div class="external-link-input">
             <input type="text" placeholder="https://docs.google.com/spreadsheets/d/xxxxx" id="external-link-02">
@@ -59,28 +114,41 @@
         <section class="section" id="sec1">
           <h2 class="section-title"><span class="section-icon">1</span> 3C分析</h2>
 
-        <div class="fill-block">
-          <div class="fill-label">Customer（顧客） <span class="required">必須</span></div>
-          <div class="fill-hint">ターゲット顧客の特徴・ニーズ・行動パターン</div>
-          <div class="fill-content">
-            <p>（顧客分析を記載）</p>
+          <div class="fill-block">
+            <div class="fill-label">3C分析 <span class="required">必須</span></div>
+            <div class="fill-hint">Customer（顧客）・Competitor（競合）・Company（自社）を、採用担当視点と転職者視点の両方から整理した比較表</div>
+            <div class="fill-content">
+              <p class="comparison-note">本サービスは、採用担当と転職者の双方に価値を提供するため、3C分析も両視点で整理した。</p>
+              <div class="table-scroll">
+                <table class="doc-table comparison-table">
+                  <thead>
+                    <tr>
+                      <th>項目</th>
+                      <th>採用担当視点</th>
+                      <th>転職者視点</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Customer（顧客）</strong></td>
+                      <td>35〜45歳の企業の人事・採用担当者。履歴書や職務経歴書だけでは候補者の人柄や価値観が分かりにくく、面接後のミスマッチや早期離職に悩んでいる。限られた時間で人物理解を深め、採用判断の精度を高めたいと考えている。</td>
+                      <td>自分のスキルや経歴だけでなく、人柄や価値観、仕事への姿勢なども企業に伝えたい転職者・求職者。特にミドル層では、書類だけでは自分の魅力が伝わりにくく、自分に合う企業との出会いを求めている。</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Competitor（競合）</strong></td>
+                      <td>Wantedly、ビズリーチ、エンミドルの転職など。求人情報やスカウト機能は充実しているが、候補者の人物像や価値観、仕事への考え方などを面接前に深く理解する仕組みは限定的である。</td>
+                      <td>Wantedly、ビズリーチ、エンミドルの転職など。求人機会は得やすいが、スキルや経歴中心の設計が多く、自分の価値観やキャリアの背景、人柄などを十分に表現できる場は少ない。</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Company（自社）</strong></td>
+                      <td>「人となりプロフィール」や「ストーリー」「ポートフォリオ」を通じて、採用担当が面接前に候補者の人物像を理解できる仕組みを提供する。スキルだけでなく価値観や相性も含めた採用判断を支援し、ミスマッチの少ない採用につなげる。</td>
+                      <td>「人となり」や経験の背景をストーリー形式で表現できるため、履歴書では伝わらない価値観や仕事観を企業に伝えやすい。自分らしさを表現しながら、相性の良い企業と出会いやすくなる。</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="fill-block">
-          <div class="fill-label">Competitor（競合） <span class="required">必須</span></div>
-          <div class="fill-hint">競合サービスの特徴・強み・弱み</div>
-          <div class="fill-content">
-            <p>（競合分析を記載）</p>
-          </div>
-        </div>
-        <div class="fill-block">
-          <div class="fill-label">Company（自社） <span class="required">必須</span></div>
-          <div class="fill-hint">自分のサービスの強み・提供できる価値</div>
-          <div class="fill-content">
-            <p>（自社分析を記載）</p>
-          </div>
-        </div>
-
         </section>
 
         <section class="section" id="sec2">
@@ -88,44 +156,150 @@
 
           <div class="fill-block">
             <div class="fill-label">SWOT分析マトリクス <span class="required">必須</span></div>
-            <div class="fill-hint">Strengths（強み）・Weaknesses（弱み）・Opportunities（機会）・Threats（脅威）</div>
+            <div class="fill-hint">Strengths（強み）・Weaknesses（弱み）・Opportunities（機会）・Threats（脅威）を整理します。</div>
+            <div class="fill-content">
+              <p>採用担当と転職者の双方に価値を届けるサービスとして、内部環境と外部環境を整理し、強み・弱み・機会・脅威を明確化します。</p>
+            </div>
 
-        <table class="doc-table">
-          <thead><tr><th></th><th>プラス要因</th><th>マイナス要因</th></tr></thead>
-          <tbody>
-          <tr class="template-row"><td><strong>内部環境</strong></td><td><strong>Strengths（強み）</strong><br>（3つ以上記載）</td><td><strong>Weaknesses（弱み）</strong><br>（3つ以上記載）</td></tr>
-          <tr class="template-row"><td><strong>外部環境</strong></td><td><strong>Opportunities（機会）</strong><br>（3つ以上記載）</td><td><strong>Threats（脅威）</strong><br>（3つ以上記載）</td></tr>
-          </tbody>
-        </table>
-
+            <table class="doc-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>プラス要因</th>
+                  <th>マイナス要因</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="template-row">
+                  <td><strong>内部環境</strong></td>
+                  <td><strong>Strengths（強み）</strong><br>1. 履歴書や職務経歴書では伝わりにくい「人となり」を可視化できる<br>2. ポートフォリオと組み合わせることで、実績だけでなく思考や価値観まで伝えられる<br>3. 面接前に人物理解を深められるため、採用ミスマッチの軽減につながる<br>4. Wantedly・ビズリーチ・エンミドルの転職など、経歴中心の転職サービスとの差別化がしやすい</td>
+                  <td><strong>Weaknesses（弱み）</strong><br>1. 新しいサービス概念のため、価値が直感的に伝わりにくい<br>2. 転職者が人柄や価値観を入力する負担が大きい<br>3. 言語化や見せ方の上手さによって、伝わり方に差が出やすい<br>4. 初期段階では登録者数や掲載事例が少なく、サービス価値が伝わりにくい</td>
+                </tr>
+                <tr class="template-row">
+                  <td><strong>外部環境</strong></td>
+                  <td><strong>Opportunities（機会）</strong><br>1. 人柄やカルチャーフィットを重視する採用ニーズが高まっている<br>2. 中途採用市場の拡大により、経歴以外の差別化要素が求められている<br>3. ミドル層採用の重要性が高まり、人柄や経験の背景への関心が高まっている<br>4. 採用DXの流れの中で、新しい採用支援ツールとして提案しやすい</td>
+                  <td><strong>Threats（脅威）</strong><br>1. Wantedlyやビズリーチなど大手転職サービスが類似機能を追加する可能性がある<br>2. 企業によっては履歴書・職務経歴書中心の採用慣行が根強い<br>3. 登録する転職者が十分に集まらないとサービス価値が成立しにくい<br>4. 自己申告情報が中心のため、内容の信頼性をどう担保するかが課題になる</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
 
         <section class="section" id="sec3">
           <h2 class="section-title"><span class="section-icon">3</span> STP分析</h2>
 
-        <div class="fill-block">
-          <div class="fill-label">Segmentation（市場細分化） <span class="required">必須</span></div>
-          <div class="fill-hint">市場をどのような基準で分類するか</div>
-          <div class="fill-content">
-            <p>（セグメンテーションを記載）</p>
-          </div>
-        </div>
-        <div class="fill-block">
-          <div class="fill-label">Targeting（ターゲット選定） <span class="required">必須</span></div>
-          <div class="fill-hint">どのセグメントを狙うか、その理由</div>
-          <div class="fill-content">
-            <p>（ターゲティングを記載）</p>
-          </div>
-        </div>
-        <div class="fill-block">
-          <div class="fill-label">Positioning（ポジショニング） <span class="required">必須</span></div>
-          <div class="fill-hint">競合に対してどのような位置づけを取るか</div>
-          <div class="fill-content">
-            <p>（ポジショニングを記載）</p>
-          </div>
-        </div>
+          <div class="fill-block">
+            <div class="fill-label">Segmentation（市場細分化） <span class="required">必須</span></div>
+            <div class="fill-hint">市場をどのような基準で分類するかを整理します。</div>
+            <div class="fill-content">
+              <p>人材紹介業界・人材業界の市場は、以下の4つの基準で細分化できる。</p>
+              <h3>1. 地理的変数（地域・都市規模）</h3>
+              <ul>
+                <li>大都市圏
+                  東京・大阪・名古屋など。求人件数が多く、採用競争が激しい。</li>
+                <li>地方中核都市
+                  札幌、仙台、広島、福岡など。地域密着型の採用ニーズが強い。</li>
+                <li>地方・郊外エリア
+                  地元就職やUターン・Iターン転職の需要がある。</li>
+                <li>全国対応・オンライン完結層
+                  リモートワーク前提で、地域を問わず転職・採用を進める層。</li>
+              </ul>
 
+              <h3>2. 人口統計的変数（年齢・性別・職業・年収）</h3>
+              <ul>
+                <li>年齢
+                  20代前半の新卒・第二新卒層、20代後半〜30代の若手・中堅層、35〜45歳のミドル層、50代以上の管理職・専門職層。</li>
+                <li>性別
+                  男性 / 女性 / 性別を問わない採用対象。</li>
+                <li>職業
+                  営業職、事務職、ITエンジニア、デザイナー、マーケター、管理職、専門職など。</li>
+                <li>年収
+                  300万円未満の若手層、300〜500万円の一般層、500〜800万円の中堅層、800万円以上のハイクラス層。</li>
+              </ul>
+
+              <h3>3. 心理的変数（ライフスタイル・価値観）</h3>
+              <ul>
+                <li>安定志向層
+                  長く働ける企業や福利厚生を重視する。</li>
+                <li>成長志向層
+                  キャリアアップやスキル向上を重視する。</li>
+                <li>共感・相性重視層
+                  企業文化や働く人との相性を重視する。</li>
+                <li>ワークライフバランス重視層
+                  働き方や柔軟性、私生活との両立を重視する。</li>
+                <li>自己表現重視層
+                  スキルだけでなく、自分らしさや価値観を伝えたいと考える。</li>
+              </ul>
+
+              <h3>4. 行動変数（利用頻度・求めるベネフィット）</h3>
+              <ul>
+                <li>利用頻度
+                  転職活動中のみ集中的に使う層、情報収集目的で継続的に使う層、良い求人があれば動く潜在転職層。</li>
+                <li>求めるベネフィット
+                  求人数の多さ、スカウト機能の充実、企業とのマッチング精度、自分の人柄や価値観を伝えやすいこと、採用担当が候補者の人物像を理解しやすいこと。</li>
+              </ul>
+
+              <div class="fill-block" style="margin: 16px 0 0;">
+                <div class="fill-label">このサービスに特に関係が深いセグメント</div>
+                <div class="fill-content">
+                  <ul>
+                    <li>地理的変数
+                      大都市圏、全国対応・オンライン完結層</li>
+                    <li>人口統計的変数
+                      35〜45歳の採用担当、中途採用対象の20代後半〜40代転職者</li>
+                    <li>心理的変数
+                      共感・相性重視層、自己表現重視層</li>
+                    <li>行動変数
+                      マッチング精度や人物理解を重視する層</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fill-block">
+            <div class="fill-label">Targeting（ターゲット選定） <span class="required">必須</span></div>
+            <div class="fill-hint">どのセグメントを狙うか、その理由をまとめます。</div>
+            <div class="fill-content">
+              <p>このサービスが狙うターゲットセグメントは、次の2つである。</p>
+
+              <h3>1. 大都市圏で中途採用を行う中小〜中堅企業の人事・採用担当</h3>
+              <p><strong>選定したセグメント</strong><br>東京・大阪・名古屋などの大都市圏にある、中途採用を継続的に行う中小〜中堅企業の人事・採用担当。</p>
+              <p><strong>市場規模（推定）</strong><br>日本の中小企業は約336万社あり、企業全体の99%以上を占める。近年は中途採用ニーズも高まり、企業の採用予定人数は大きく増加している。大都市圏に集中する企業群の中でも、中途採用を行う企業は数十万社規模と推定される。</p>
+              <p><strong>選定理由</strong><br>この層は採用競争が激しく、限られた時間で候補者を見極める必要がある。そのため履歴書や職務経歴書だけでは見えない「人となり」を事前に把握できるサービス価値が伝わりやすい。また大企業と比較して導入意思決定が速く、新しい採用手法を取り入れやすい点も初期ターゲットとして適している。</p>
+              <p><strong>このセグメントのニーズ</strong><br>書類では分からない候補者の人柄、価値観、仕事観を面接前に理解したいというニーズがある。特に採用後のミスマッチ防止、定着率向上、カルチャーフィット確認に関心が高い。</p>
+
+              <h3>2. IT・Web・クリエイティブ職を採用する企業の人事・採用担当</h3>
+              <p><strong>選定したセグメント</strong><br>ITエンジニア、デザイナー、マーケターなど、ポートフォリオや実績確認が採用で重視される職種を採用する企業の人事・採用担当。</p>
+              <p><strong>市場規模（推定）</strong><br>IT・Web・クリエイティブ領域の企業は情報通信業や専門サービス業を中心に数万社規模存在しており、中途採用の需要も高い。</p>
+              <p><strong>選定理由</strong><br>この領域では制作物や実績を見る文化があり、ポートフォリオと「人となり」を組み合わせて見せる価値が理解されやすい。そのためサービスの特徴を最も活かしやすい市場である。</p>
+              <p><strong>このセグメントのニーズ</strong><br>成果物だけでなく、制作背景、課題解決の考え方、チームでの役割、価値観などを理解したいというニーズがある。特にIT職やクリエイティブ職では、アウトプットに加えて思考プロセスやコミュニケーション相性も重視される。</p>
+
+            </div>
+          </div>
+
+          <div class="fill-block">
+            <div class="fill-label">Positioning（ポジショニング） <span class="required">必須</span></div>
+            <div class="fill-hint">競合に対してどのような位置づけを取るかを整理します。</div>
+            <div class="fill-content">
+              <p>大手転職サービスが「求人接触」と「企業比較」に強いのに対し、本サービスは「自己理解」と「次の一歩の整理」に強みを置きます。</p>
+              <p>診断結果やキャリアの悩みを起点に、求人を見る前段階の迷いを整理する立ち位置を取ることで、直接競争を避けつつ独自価値を出します。</p>
+              <h3>ポジショニングマップ</h3>
+              <div class="table-scroll">
+                <pre class="positioning-map">                         自己理解・内省支援が強い
+                                      ↑
+                 キャリア診断系サービス      |      本サービス
+                 ・自己分析に強い            |  ・自己理解と次の行動整理
+                                      |
+            --------------------------+--------------------------→ 情報比較・求人接触が強い
+                                      |
+                     学習メディア         |        Wantedly
+                ・情報収集に強い           |   ・求人接触と企業理解
+                                      ↓
+                             行動導線が弱い</pre>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section class="section" id="sec4">
@@ -133,48 +307,77 @@
 
           <div class="fill-block">
             <div class="fill-label">4P・4C分析 <span class="required">必須</span></div>
-        <table class="doc-table">
-          <thead><tr><th>4P（売り手視点）</th><th>内容</th><th>4C（買い手視点）</th><th>内容</th></tr></thead>
-          <tbody>
-          <tr class="template-row"><td><strong>Product</strong><br>（製品）</td><td>（記載）</td><td><strong>Customer Value</strong><br>（顧客価値）</td><td>（記載）</td></tr>
-          <tr class="template-row"><td><strong>Price</strong><br>（価格）</td><td>（記載）</td><td><strong>Cost</strong><br>（顧客コスト）</td><td>（記載）</td></tr>
-          <tr class="template-row"><td><strong>Place</strong><br>（流通）</td><td>（記載）</td><td><strong>Convenience</strong><br>（利便性）</td><td>（記載）</td></tr>
-          <tr class="template-row"><td><strong>Promotion</strong><br>（販促）</td><td>（記載）</td><td><strong>Communication</strong><br>（対話）</td><td>（記載）</td></tr>
-          </tbody>
-        </table>
-
+            <div class="fill-content">
+              <p>提供者視点の4Pと、ユーザー視点の4Cを対応づけることで、価値設計の抜け漏れを確認します。</p>
+            </div>
+            <div class="table-scroll">
+              <table class="doc-table analysis-table">
+                <thead>
+                  <tr>
+                    <th>4P（売り手視点）</th>
+                    <th>内容</th>
+                    <th>4C（買い手視点）</th>
+                    <th>内容</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="template-row">
+                    <td><strong>Product</strong></td>
+                    <td>自己分析、キャリア整理、競合比較、次の行動提案を一体で提供するキャリア支援サイト</td>
+                    <td><strong>Customer Value</strong></td>
+                    <td>自分に合う選択肢を見つけやすくなり、迷いの言語化と次の一歩の明確化につながる</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td><strong>Price</strong></td>
+                    <td>初期利用は無料を前提とし、まず体験価値と継続利用の意欲を高める</td>
+                    <td><strong>Cost</strong></td>
+                    <td>金銭負担よりも、入力や比較にかかる時間コストをできるだけ下げることが重要</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td><strong>Place</strong></td>
+                    <td>Webサイト中心で提供し、SNS や検索流入からもアクセスしやすくする</td>
+                    <td><strong>Convenience</strong></td>
+                    <td>スマートフォンでも見やすく、短時間で必要な情報にたどり着ける導線を重視する</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td><strong>Promotion</strong></td>
+                    <td>診断結果やキャリアの悩みに寄り添うコンテンツで関心を喚起する</td>
+                    <td><strong>Communication</strong></td>
+                    <td>一方的に訴求するのではなく、悩みに共感しながら対話的に理解を促す構成にする</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
 
         <section class="section" id="sec5">
           <h2 class="section-title"><span class="section-icon">5</span> 競合サイト分析</h2>
 
+          <div class="fill-block">
+            <div class="fill-label">競合サイト 1 <span class="required">必須</span></div>
+            <div class="fill-hint">サイト名・URL・スクリーンショット・分析</div>
+            <div class="fill-content">
+              <p><strong>Wantedly</strong><br>企業文化や働く人に焦点を当てた訴求が強く、求人接触への導線がわかりやすい。一方で、自己分析や意思決定の補助は限定的であるため、本サービスはその前段の迷い整理で差別化できる。</p>
+            </div>
+          </div>
 
-        <div class="fill-block">
-          <div class="fill-label">競合サイト 1 <span class="required">必須</span></div>
-          <div class="fill-hint">サイト名・URL・スクリーンショット・分析</div>
-          <div class="fill-content">
-            <p>（競合サイト1の分析を記載）
-（スクリーンショットを配置：&lt;img src=&quot;../images/competitor1.png&quot; alt=&quot;競合サイト1&quot;&gt;）</p>
+          <div class="fill-block">
+            <div class="fill-label">競合サイト 2 <span class="required">必須</span></div>
+            <div class="fill-hint">サイト名・URL・スクリーンショット・分析</div>
+            <div class="fill-content">
+              <p><strong>キャリア系メディア</strong><br>記事量やSEO流入には強みがあるが、情報が点在しやすく、ユーザーが自分ごと化しにくい場合がある。本サービスは情報の深さより、行動につながる導線設計を重視する。</p>
+            </div>
           </div>
-        </div>
-        <div class="fill-block">
-          <div class="fill-label">競合サイト 2 <span class="required">必須</span></div>
-          <div class="fill-hint">サイト名・URL・スクリーンショット・分析</div>
-          <div class="fill-content">
-            <p>（競合サイト2の分析を記載）</p>
-          </div>
-        </div>
-        <div class="fill-block">
-          <div class="fill-label">競合サイト 3 <span class="required">必須</span></div>
-          <div class="fill-hint">サイト名・URL・スクリーンショット・分析</div>
-          <div class="fill-content">
-            <p>（競合サイト3の分析を記載）</p>
-          </div>
-        </div>
 
+          <div class="fill-block">
+            <div class="fill-label">競合サイト 3 <span class="required">必須</span></div>
+            <div class="fill-hint">サイト名・URL・スクリーンショット・分析</div>
+            <div class="fill-content">
+              <p><strong>診断系サービス</strong><br>自己理解を促す入口として有効だが、診断後の次の行動提案が弱いケースが多い。本サービスは診断後の比較、学習、行動までつなげることで価値を広げる。</p>
+            </div>
+          </div>
         </section>
-
       </div>
     </main>
   </div>

@@ -41,6 +41,69 @@
     .table-scroll {
       overflow-x: auto;
     }
+
+    .app-table {
+      width: 100%;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .app-table th,
+    .app-table td {
+      vertical-align: top;
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+    }
+
+    .app-table td:first-child,
+    .app-table th:first-child {
+      width: 64px;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .app-table td:nth-child(2),
+    .app-table th:nth-child(2) {
+      min-width: 190px;
+    }
+
+    .app-table td:nth-child(3),
+    .app-table th:nth-child(3) {
+      min-width: 250px;
+    }
+
+    .app-table td:nth-child(4),
+    .app-table th:nth-child(4) {
+      min-width: 300px;
+    }
+
+    .app-subsection {
+      margin-top: 24px;
+    }
+
+    .app-subsection:first-of-type {
+      margin-top: 0;
+    }
+
+    .app-subtitle {
+      margin: 0 0 12px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .app-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fff;
+    }
+
+    .app-table thead th {
+      background: var(--black);
+      color: var(--white);
+      font-weight: 700;
+    }
   </style>
 </head>
 <body>
@@ -188,15 +251,73 @@
 
           <div class="fill-block">
             <div class="fill-label">Webアプリ 画面一覧 <span class="required">必須</span></div>
-        <table class="doc-table">
+            <p class="sitemap-table-intro">この画面一覧は、Spring BootによるWebアプリケーション構成を想定し、共通画面・採用担当向け画面・求職者向け画面・将来想定の管理画面に分けて整理したものである。各ユーザーの利用目的に応じた画面構成とすることで、操作の流れと役割が分かりやすくなるよう設計している。</p>
+
+            <section class="app-subsection">
+              <h4 class="app-subtitle">共通画面</h4>
+              <div class="app-table-wrap">
+        <table class="doc-table app-table">
           <thead><tr><th>No.</th><th>画面名</th><th>画面の目的</th><th>主要機能</th></tr></thead>
           <tbody>
-          <tr class="template-row"><td>1</td><td>（ログイン画面）</td><td>（ユーザー認証）</td><td>（メールアドレス/パスワード入力）</td></tr>
-          <tr class="template-row"><td>2</td><td>（一覧画面）</td><td>（データの一覧表示）</td><td>（検索・ソート・ページネーション）</td></tr>
-          <tr class="template-row"><td>3</td><td>（登録画面）</td><td>（新規データ登録）</td><td>（入力フォーム・バリデーション）</td></tr>
-          <tr class="template-row"><td>…</td><td>…</td><td>…</td><td>…</td></tr>
+          <tr><td>1</td><td>ログイン画面</td><td>ユーザー認証を行い各機能へアクセスする</td><td>メール/パスワード入力、ログイン、再設定導線</td></tr>
+          <tr><td>2</td><td>新規登録画面</td><td>ユーザーアカウントを作成する</td><td>ユーザー種別選択、基本情報入力、登録処理</td></tr>
+          <tr><td>3</td><td>トップ/ランディング画面</td><td>サービス概要を理解し導線へ誘導する</td><td>サービス説明、導線ボタン</td></tr>
+          <tr><td>4</td><td>お問い合わせ画面</td><td>問い合わせを受け付ける</td><td>フォーム入力、送信機能</td></tr>
           </tbody>
         </table>
+              </div>
+            </section>
+
+            <section class="app-subsection">
+              <h4 class="app-subtitle">採用担当向け画面</h4>
+              <div class="app-table-wrap">
+        <table class="doc-table app-table">
+          <thead><tr><th>No.</th><th>画面名</th><th>画面の目的</th><th>主要機能</th></tr></thead>
+          <tbody>
+          <tr><td>1</td><td>採用担当ダッシュボード</td><td>採用活動の起点として利用する</td><td>メニュー表示、候補者導線、状況確認</td></tr>
+          <tr><td>2</td><td>プロフィール一覧画面</td><td>候補者を検索・比較する</td><td>一覧表示、検索、絞り込み</td></tr>
+          <tr><td>3</td><td>プロフィール詳細画面</td><td>候補者の人物像を詳しく理解する</td><td>自己紹介、価値観、経歴表示</td></tr>
+          <tr><td>4</td><td>ストーリー画面</td><td>候補者の背景や思考を理解する</td><td>キャリアストーリー表示</td></tr>
+          <tr><td>5</td><td>ポートフォリオ画面</td><td>実績と考え方を確認する</td><td>制作物、プロセス表示</td></tr>
+          <tr><td>6</td><td>面談依頼画面</td><td>候補者へアクションする</td><td>面談依頼、メッセージ送信</td></tr>
+          <tr><td>7</td><td>利用ガイド画面</td><td>サービスの使い方を理解する</td><td>利用方法、活用例表示</td></tr>
+          </tbody>
+        </table>
+              </div>
+            </section>
+
+            <section class="app-subsection">
+              <h4 class="app-subtitle">求職者向け画面</h4>
+              <div class="app-table-wrap">
+        <table class="doc-table app-table">
+          <thead><tr><th>No.</th><th>画面名</th><th>画面の目的</th><th>主要機能</th></tr></thead>
+          <tbody>
+          <tr><td>1</td><td>求職者ダッシュボード</td><td>プロフィール管理の起点とする</td><td>状況確認、編集導線</td></tr>
+          <tr><td>2</td><td>プロフィール編集画面</td><td>基本情報や人となりを入力する</td><td>自己紹介、価値観入力</td></tr>
+          <tr><td>3</td><td>ストーリー編集画面</td><td>経験や仕事観を整理する</td><td>ストーリー入力</td></tr>
+          <tr><td>4</td><td>ポートフォリオ編集画面</td><td>実績や成果物を登録する</td><td>制作物入力</td></tr>
+          <tr><td>5</td><td>プレビュー画面</td><td>公開前の確認を行う</td><td>表示確認、公開設定</td></tr>
+          <tr><td>6</td><td>登録情報確認画面</td><td>入力内容を一覧で確認する</td><td>内容確認、編集導線</td></tr>
+          </tbody>
+        </table>
+              </div>
+            </section>
+
+            <section class="app-subsection">
+              <h4 class="app-subtitle">将来想定の管理画面</h4>
+              <div class="app-table-wrap">
+        <table class="doc-table app-table">
+          <thead><tr><th>No.</th><th>画面名</th><th>画面の目的</th><th>主要機能</th></tr></thead>
+          <tbody>
+          <tr><td>1</td><td>管理画面トップ</td><td>管理機能の入口</td><td>管理メニュー表示</td></tr>
+          <tr><td>2</td><td>ユーザー管理画面</td><td>ユーザー情報を管理する</td><td>一覧、編集、停止</td></tr>
+          <tr><td>3</td><td>プロフィール管理画面</td><td>プロフィール内容を管理する</td><td>内容確認、制御</td></tr>
+          <tr><td>4</td><td>ポートフォリオ管理画面</td><td>ポートフォリオを管理する</td><td>一覧、確認、公開制御</td></tr>
+          <tr><td>5</td><td>問い合わせ管理画面</td><td>問い合わせ対応を管理する</td><td>一覧、対応履歴</td></tr>
+          </tbody>
+        </table>
+              </div>
+            </section>
 
           </div>
         </section>
@@ -208,14 +329,134 @@
           <div class="fill-label">メインシナリオ <span class="required">必須</span></div>
           <div class="fill-hint">ペルソナがサイトに訪問してから目的を達成するまでの動線（メインの行動パターン）</div>
           <div class="fill-content">
-            <p>（メインのユーザーフローを記載）</p>
+            <p><strong>メインユーザー</strong></p>
+
+            <p><strong>佐藤 恒一</strong>（35歳 / 人事部 採用担当主任）<br>目的: 履歴書や職務経歴書だけでは分からない候補者の人柄や価値観を事前に理解したい。</p>
+            <table class="doc-table">
+              <thead><tr><th>ステップ</th><th>行動</th><th>表示ページ</th><th>次のアクション</th></tr></thead>
+              <tbody>
+              <tr><td>1</td><td>採用関連の記事やSNSでサービスを知りサイトを訪問する</td><td>トップページ</td><td>サービス内容を確認する</td></tr>
+              <tr><td>2</td><td>サービスの仕組みや特徴を理解する</td><td>サービス紹介ページ</td><td>採用担当向けの情報を探す</td></tr>
+              <tr><td>3</td><td>採用担当向けの利用方法を確認する</td><td>採用担当向けガイド</td><td>実際に候補者を探してみる</td></tr>
+              <tr><td>4</td><td>人材プロフィールを検索する</td><td>プロフィール一覧ページ</td><td>気になる候補者を選ぶ</td></tr>
+              <tr><td>5</td><td>候補者の詳細プロフィールを確認する</td><td>プロフィール詳細ページ</td><td>人となりをさらに知る</td></tr>
+              <tr><td>6</td><td>キャリア背景や価値観を確認する</td><td>ストーリーページ</td><td>スキルや実績を確認する</td></tr>
+              <tr><td>7</td><td>制作物や実績を確認する</td><td>ポートフォリオページ</td><td>面談を検討する</td></tr>
+              <tr><td>8</td><td>面談依頼を送る</td><td>プロフィール詳細ページ</td><td>面談調整へ進む</td></tr>
+              </tbody>
+            </table>
+
+            <p><strong>中村 美咲</strong>（38歳 / 人事・採用マネージャー）<br>目的: ポートフォリオだけでは分からない候補者の価値観やチームとの相性を知りたい。</p>
+            <table class="doc-table">
+              <thead><tr><th>ステップ</th><th>行動</th><th>表示ページ</th><th>次のアクション</th></tr></thead>
+              <tbody>
+              <tr><td>1</td><td>デザイン採用の情報を調べている中でサービスを知る</td><td>トップページ</td><td>サービスの特徴を見る</td></tr>
+              <tr><td>2</td><td>サービスの目的や価値を理解する</td><td>サービス紹介ページ</td><td>利用イメージを確認する</td></tr>
+              <tr><td>3</td><td>サービスの使い方を確認する</td><td>採用担当向けガイド</td><td>人材を探してみる</td></tr>
+              <tr><td>4</td><td>職種やスキルで候補者を検索する</td><td>プロフィール一覧ページ</td><td>気になる人材をクリック</td></tr>
+              <tr><td>5</td><td>人柄や価値観を確認する</td><td>プロフィール詳細ページ</td><td>キャリアストーリーを見る</td></tr>
+              <tr><td>6</td><td>仕事への考え方や経験の背景を理解する</td><td>ストーリーページ</td><td>制作物を確認する</td></tr>
+              <tr><td>7</td><td>ポートフォリオを確認する</td><td>ポートフォリオページ</td><td>面談を検討する</td></tr>
+              <tr><td>8</td><td>面談依頼を送る</td><td>プロフィール詳細ページ</td><td>面談調整へ進む</td></tr>
+              </tbody>
+            </table>
+
+            <p><strong>サブユーザー</strong></p>
+
+            <p><strong>田村 恒一</strong>（39歳 / 営業部 主任）<br>目的: 数字や肩書きだけでなく、人柄や仕事への姿勢を企業に伝えたい。</p>
+            <table class="doc-table">
+              <thead><tr><th>ステップ</th><th>行動</th><th>表示ページ</th><th>次のアクション</th></tr></thead>
+              <tbody>
+              <tr><td>1</td><td>転職情報を調べている中でサービスを知る</td><td>トップページ</td><td>サービス内容を確認する</td></tr>
+              <tr><td>2</td><td>自分の魅力を伝えられるサービスか確認する</td><td>サービス紹介ページ</td><td>求職者向け情報を見る</td></tr>
+              <tr><td>3</td><td>利用方法を確認する</td><td>求職者向けガイドページ</td><td>プロフィール作成を検討する</td></tr>
+              <tr><td>4</td><td>アカウント登録を行う</td><td>プロフィール作成ページ</td><td>基本情報を入力する</td></tr>
+              <tr><td>5</td><td>自分の経験や経歴を入力する</td><td>プロフィール作成ページ</td><td>人となり情報を入力する</td></tr>
+              <tr><td>6</td><td>価値観や仕事観を入力する</td><td>プロフィール作成ページ</td><td>キャリアストーリーを書く</td></tr>
+              <tr><td>7</td><td>ストーリーを作成する</td><td>ストーリーページ</td><td>ポートフォリオを登録する</td></tr>
+              <tr><td>8</td><td>プロフィールを公開する</td><td>プロフィールページ</td><td>企業からの閲覧を待つ</td></tr>
+              </tbody>
+            </table>
+
+            <p><strong>石井 由美</strong>（43歳 / 医療事務スタッフ）<br>目的: 年齢や資格だけで判断されず、丁寧さや人柄を企業に伝えたい。</p>
+            <table class="doc-table">
+              <thead><tr><th>ステップ</th><th>行動</th><th>表示ページ</th><th>次のアクション</th></tr></thead>
+              <tbody>
+              <tr><td>1</td><td>転職記事を見てサービスを知る</td><td>トップページ</td><td>サービス概要を確認する</td></tr>
+              <tr><td>2</td><td>自分でも使えそうか確認する</td><td>サービス紹介ページ</td><td>求職者向けページを見る</td></tr>
+              <tr><td>3</td><td>プロフィールの書き方を確認する</td><td>求職者向けガイドページ</td><td>登録を検討する</td></tr>
+              <tr><td>4</td><td>アカウント登録を行う</td><td>プロフィール作成ページ</td><td>基本情報を入力する</td></tr>
+              <tr><td>5</td><td>仕事の経験やスキルを入力する</td><td>プロフィール作成ページ</td><td>人となり情報を入力する</td></tr>
+              <tr><td>6</td><td>仕事への姿勢や価値観を入力する</td><td>プロフィール作成ページ</td><td>ストーリーを書く</td></tr>
+              <tr><td>7</td><td>自分のキャリアストーリーを作成する</td><td>ストーリーページ</td><td>プロフィールを公開する</td></tr>
+              <tr><td>8</td><td>プロフィール公開後、企業からの閲覧を待つ</td><td>プロフィールページ</td><td>応募や面談につなげる</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <div class="fill-block">
           <div class="fill-label">サブシナリオ <span class="optional">任意</span></div>
           <div class="fill-hint">その他の行動パターン（1〜2パターン）</div>
           <div class="fill-content">
-            <p>（サブシナリオを記載）</p>
+            <p><strong>メインユーザー</strong></p>
+
+            <p><strong>佐藤 恒一</strong>（35歳 / 人事部 採用担当主任）<br>目的: 履歴書や職務経歴書だけでは分からない候補者の人柄や価値観を事前に理解したい。</p>
+
+            <p><strong>パターン1</strong><br>気になる候補者をすぐに探すのではなく、先にサービス全体の価値や使い方を確認してから利用を判断するパターン。</p>
+            <table class="doc-table">
+              <thead><tr><th>ステップ</th><th>行動</th><th>表示ページ</th><th>次のアクション</th></tr></thead>
+              <tbody>
+              <tr><td>1</td><td>採用系メディアでサービスを知り、まず公式サイトを見る</td><td>トップページ</td><td>サービスの概要を確認する</td></tr>
+              <tr><td>2</td><td>既存サービスとの違いや導入価値を確認する</td><td>サービス紹介ページ</td><td>採用担当向けの利用方法を見る</td></tr>
+              <tr><td>3</td><td>採用担当向けの活用方法を確認する</td><td>採用担当向けガイド</td><td>候補者の探し方を理解する</td></tr>
+              <tr><td>4</td><td>人材検索方法を理解したうえで候補者を探し始める</td><td>プロフィール一覧ページ</td><td>気になる候補者を選ぶ</td></tr>
+              <tr><td>5</td><td>候補者の人物像を確認する</td><td>プロフィール詳細ページ</td><td>面談前に追加情報を見る</td></tr>
+              <tr><td>6</td><td>ストーリーやポートフォリオを確認する</td><td>ストーリーページ / ポートフォリオページ</td><td>面談を検討する</td></tr>
+              </tbody>
+            </table>
+
+            <p><strong>パターン2</strong><br>社内共有を前提に、候補者を比較しながら慎重に判断するパターン。</p>
+            <table class="doc-table">
+              <thead><tr><th>ステップ</th><th>行動</th><th>表示ページ</th><th>次のアクション</th></tr></thead>
+              <tbody>
+              <tr><td>1</td><td>採用課題の解決策を探していてサービスを知る</td><td>トップページ</td><td>サービスの特徴を確認する</td></tr>
+              <tr><td>2</td><td>候補者理解に役立つか確認する</td><td>サービス紹介ページ</td><td>候補者検索へ進む</td></tr>
+              <tr><td>3</td><td>複数の候補者を検索して比較候補を探す</td><td>プロフィール一覧ページ</td><td>何人かの候補者詳細を見る</td></tr>
+              <tr><td>4</td><td>各候補者のプロフィールを確認する</td><td>プロフィール詳細ページ</td><td>ストーリーや実績を見る</td></tr>
+              <tr><td>5</td><td>価値観やキャリア背景を確認する</td><td>ストーリーページ</td><td>現場共有を意識して整理する</td></tr>
+              <tr><td>6</td><td>実績や思考プロセスを確認する</td><td>ポートフォリオページ</td><td>面談候補を絞る</td></tr>
+              </tbody>
+            </table>
+
+            <p><strong>サブユーザー</strong></p>
+
+            <p><strong>田村 恒一</strong>（39歳 / 営業部 主任）<br>目的: 数字や肩書きだけでなく、人柄や仕事への姿勢を企業に伝えたい。</p>
+
+            <p><strong>パターン1</strong><br>すぐに登録せず、まず自分でも使えそうかを慎重に見極めるパターン。</p>
+            <table class="doc-table">
+              <thead><tr><th>ステップ</th><th>行動</th><th>表示ページ</th><th>次のアクション</th></tr></thead>
+              <tbody>
+              <tr><td>1</td><td>転職記事や検索結果からサービスを知る</td><td>トップページ</td><td>自分向けのサービスか確認する</td></tr>
+              <tr><td>2</td><td>書類では伝わらない強みを表現できるか確認する</td><td>サービス紹介ページ</td><td>求職者向け情報を見る</td></tr>
+              <tr><td>3</td><td>使い方やプロフィール作成の流れを確認する</td><td>求職者向けガイドページ</td><td>登録するか考える</td></tr>
+              <tr><td>4</td><td>入力負担が大きくないか確認する</td><td>プロフィール作成ページ</td><td>登録を決める</td></tr>
+              <tr><td>5</td><td>基本情報と経歴を入力し始める</td><td>プロフィール作成ページ</td><td>人となり情報も入力する</td></tr>
+              <tr><td>6</td><td>自分の強みや価値観を整理する</td><td>プロフィール作成ページ</td><td>公開に向けて内容を整える</td></tr>
+              </tbody>
+            </table>
+
+            <p><strong>パターン2</strong><br>応募先を意識しながら、プロフィールを応募補助資料として整えていくパターン。</p>
+            <table class="doc-table">
+              <thead><tr><th>ステップ</th><th>行動</th><th>表示ページ</th><th>次のアクション</th></tr></thead>
+              <tbody>
+              <tr><td>1</td><td>気になる求人を見つけた流れでサービスを知る</td><td>トップページ</td><td>どんな使い方ができるか確認する</td></tr>
+              <tr><td>2</td><td>自分の人柄を補足できるか確認する</td><td>サービス紹介ページ</td><td>求職者向けの説明を見る</td></tr>
+              <tr><td>3</td><td>プロフィール作成のポイントを確認する</td><td>求職者向けガイドページ</td><td>入力を始める</td></tr>
+              <tr><td>4</td><td>経歴や自己紹介を入力する</td><td>プロフィール作成ページ</td><td>価値観や仕事観を書く</td></tr>
+              <tr><td>5</td><td>キャリアストーリーを作成する</td><td>ストーリーページ</td><td>企業に見せる前提で整える</td></tr>
+              <tr><td>6</td><td>プロフィールを公開し、応募時の補助資料として活用する</td><td>プロフィールページ</td><td>企業からの閲覧を待つ</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
@@ -225,18 +466,112 @@
           <h2 class="section-title"><span class="section-icon">4</span> URL設計</h2>
 
           <div class="fill-block">
-            <div class="fill-label">URL一覧 <span class="required">必須</span></div>
+            <div class="fill-label">1. Webサイト部分 URL設計 <span class="required">必須</span></div>
         <table class="doc-table">
           <thead><tr><th>URL</th><th>HTTPメソッド</th><th>画面/機能</th><th>説明</th></tr></thead>
           <tbody>
-          <tr class="template-row"><td>/</td><td>GET</td><td>トップページ</td><td>Webサイトのトップ</td></tr>
-          <tr class="template-row"><td>/about</td><td>GET</td><td>概要ページ</td><td>サービスの概要</td></tr>
-          <tr class="template-row"><td>/app/login</td><td>GET</td><td>ログイン画面</td><td>ログインフォーム表示</td></tr>
-          <tr class="template-row"><td>/app/login</td><td>POST</td><td>ログイン処理</td><td>認証処理</td></tr>
-          <tr class="template-row"><td>/app/items</td><td>GET</td><td>一覧画面</td><td>データ一覧表示</td></tr>
-          <tr class="template-row"><td>/app/items/new</td><td>GET</td><td>新規登録画面</td><td>登録フォーム表示</td></tr>
-          <tr class="template-row"><td>/app/items</td><td>POST</td><td>新規登録処理</td><td>データ保存</td></tr>
-          <tr class="template-row"><td>…</td><td>…</td><td>…</td><td>…</td></tr>
+          <tr><td>/</td><td>GET</td><td>トップページ</td><td>サービスの入口。概要、特徴、主要導線を表示する</td></tr>
+          <tr><td>/about</td><td>GET</td><td>サービス紹介ページ</td><td>コンセプト、課題、特徴、利用メリットを表示する</td></tr>
+          <tr><td>/guides/recruiters</td><td>GET</td><td>採用担当向けガイド</td><td>採用担当向けの使い方、検索方法、面談依頼の流れを表示する</td></tr>
+          <tr><td>/guides/job-seekers</td><td>GET</td><td>求職者向けガイド</td><td>求職者向けの使い方、プロフィール作成のポイントを表示する</td></tr>
+          <tr><td>/profiles</td><td>GET</td><td>プロフィール一覧</td><td>候補者プロフィールの一覧表示、検索、絞り込みを行う</td></tr>
+          <tr><td>/profiles/{profileId}</td><td>GET</td><td>プロフィール詳細</td><td>候補者の基本情報、人となり、経歴を表示する</td></tr>
+          <tr><td>/profiles/{profileId}/story</td><td>GET</td><td>ストーリーページ</td><td>候補者のキャリア背景、価値観、転機を表示する</td></tr>
+          <tr><td>/profiles/{profileId}/portfolio</td><td>GET</td><td>ポートフォリオページ</td><td>制作物、実績、課題、解決方法、学びを表示する</td></tr>
+          <tr><td>/profiles/{profileId}/interview-requests/new</td><td>GET</td><td>面談依頼入力</td><td>面談依頼フォームを表示する</td></tr>
+          <tr><td>/profiles/{profileId}/interview-requests</td><td>POST</td><td>面談依頼登録</td><td>面談依頼を送信する</td></tr>
+          <tr><td>/signup</td><td>GET</td><td>会員登録画面</td><td>求職者の新規登録フォームを表示する</td></tr>
+          <tr><td>/users</td><td>POST</td><td>会員登録処理</td><td>求職者アカウントを作成する</td></tr>
+          <tr><td>/login</td><td>GET</td><td>ログイン画面</td><td>一般ユーザー用ログインフォームを表示する</td></tr>
+          <tr><td>/sessions</td><td>POST</td><td>ログイン処理</td><td>ログインセッションを作成する</td></tr>
+          <tr><td>/sessions/current</td><td>DELETE</td><td>ログアウト</td><td>現在のログインセッションを破棄する</td></tr>
+          <tr><td>/me/profile</td><td>GET</td><td>自分のプロフィール確認</td><td>求職者が自分のプロフィールを確認する</td></tr>
+          <tr><td>/me/profile/edit</td><td>GET</td><td>プロフィール編集画面</td><td>プロフィール編集フォームを表示する</td></tr>
+          <tr><td>/me/profile</td><td>PATCH</td><td>プロフィール更新</td><td>基本情報、人となり、経歴を更新する</td></tr>
+          <tr><td>/me/story/edit</td><td>GET</td><td>ストーリー編集画面</td><td>キャリアストーリー編集フォームを表示する</td></tr>
+          <tr><td>/me/story</td><td>PATCH</td><td>ストーリー更新</td><td>ストーリー内容を更新する</td></tr>
+          <tr><td>/me/portfolio</td><td>GET</td><td>自分のポートフォリオ一覧</td><td>自分の登録したポートフォリオ一覧を表示する</td></tr>
+          <tr><td>/me/portfolio/new</td><td>GET</td><td>ポートフォリオ登録画面</td><td>新規ポートフォリオ入力フォームを表示する</td></tr>
+          <tr><td>/me/portfolio</td><td>POST</td><td>ポートフォリオ登録</td><td>新規ポートフォリオを作成する</td></tr>
+          <tr><td>/me/portfolio/{portfolioId}/edit</td><td>GET</td><td>ポートフォリオ編集画面</td><td>既存ポートフォリオの編集フォームを表示する</td></tr>
+          <tr><td>/me/portfolio/{portfolioId}</td><td>PATCH</td><td>ポートフォリオ更新</td><td>ポートフォリオ内容を更新する</td></tr>
+          <tr><td>/me/portfolio/{portfolioId}</td><td>DELETE</td><td>ポートフォリオ削除</td><td>自分のポートフォリオを削除する</td></tr>
+          <tr><td>/contact</td><td>GET</td><td>お問い合わせ画面</td><td>問い合わせフォームとFAQを表示する</td></tr>
+          <tr><td>/inquiries</td><td>POST</td><td>問い合わせ送信</td><td>問い合わせ内容を送信する</td></tr>
+          </tbody>
+        </table>
+
+          </div>
+
+          <div class="fill-block">
+            <div class="fill-label">2. Spring Bootアプリ部分 URL設計（前半） <span class="required">必須</span></div>
+        <table class="doc-table">
+          <thead><tr><th>URL</th><th>HTTPメソッド</th><th>画面/機能</th><th>説明</th></tr></thead>
+          <tbody>
+          <tr><td>/admin/login</td><td>GET</td><td>管理者ログイン画面</td><td>管理システム用ログインフォームを表示する</td></tr>
+          <tr><td>/admin/sessions</td><td>POST</td><td>管理者ログイン処理</td><td>管理者セッションを作成する</td></tr>
+          <tr><td>/admin/sessions/current</td><td>DELETE</td><td>管理者ログアウト</td><td>現在の管理者セッションを破棄する</td></tr>
+          <tr><td>/admin</td><td>GET</td><td>ダッシュボード</td><td>件数サマリー、重要アラート、最近の更新情報を表示する</td></tr>
+          <tr><td>/admin/users</td><td>GET</td><td>ユーザー一覧</td><td>採用担当・求職者ユーザーを検索、一覧表示する</td></tr>
+          <tr><td>/admin/users/{userId}</td><td>GET</td><td>ユーザー詳細</td><td>ユーザー詳細情報、状態、利用状況を表示する</td></tr>
+          <tr><td>/admin/users/new</td><td>GET</td><td>ユーザー作成画面</td><td>管理者によるユーザー新規登録フォームを表示する</td></tr>
+          <tr><td>/admin/users</td><td>POST</td><td>ユーザー作成</td><td>ユーザーを新規登録する</td></tr>
+          <tr><td>/admin/users/{userId}/edit</td><td>GET</td><td>ユーザー編集画面</td><td>ユーザー編集フォームを表示する</td></tr>
+          <tr><td>/admin/users/{userId}</td><td>PATCH</td><td>ユーザー更新</td><td>ユーザー情報を更新する</td></tr>
+          <tr><td>/admin/users/{userId}</td><td>DELETE</td><td>ユーザー削除</td><td>ユーザーを削除する</td></tr>
+          <tr><td>/admin/users/{userId}/status</td><td>PATCH</td><td>ユーザー停止 / 再開</td><td>利用停止・再開などの状態変更を行う</td></tr>
+          <tr><td>/admin/profiles</td><td>GET</td><td>プロフィール一覧</td><td>プロフィールを検索、絞り込み、一覧表示する</td></tr>
+          <tr><td>/admin/profiles/{profileId}</td><td>GET</td><td>プロフィール詳細</td><td>自己紹介、価値観、経歴、公開状態を確認する</td></tr>
+          <tr><td>/admin/profiles/{profileId}/edit</td><td>GET</td><td>プロフィール編集画面</td><td>管理者によるプロフィール編集フォームを表示する</td></tr>
+          <tr><td>/admin/profiles/{profileId}</td><td>PATCH</td><td>プロフィール更新</td><td>プロフィール内容を更新する</td></tr>
+          <tr><td>/admin/profiles/{profileId}</td><td>DELETE</td><td>プロフィール削除</td><td>プロフィールを削除する</td></tr>
+          <tr><td>/admin/profiles/{profileId}/visibility</td><td>PATCH</td><td>公開 / 非公開切替</td><td>プロフィールの公開状態を変更する</td></tr>
+          <tr><td>/admin/portfolios</td><td>GET</td><td>ポートフォリオ一覧</td><td>ポートフォリオを検索、一覧表示する</td></tr>
+          <tr><td>/admin/portfolios/{portfolioId}</td><td>GET</td><td>ポートフォリオ詳細</td><td>実績、課題、解決方法、公開状態を確認する</td></tr>
+          <tr><td>/admin/portfolios/{portfolioId}/edit</td><td>GET</td><td>ポートフォリオ編集画面</td><td>管理者による編集フォームを表示する</td></tr>
+          <tr><td>/admin/portfolios/{portfolioId}</td><td>PATCH</td><td>ポートフォリオ更新</td><td>ポートフォリオ内容を更新する</td></tr>
+          <tr><td>/admin/portfolios/{portfolioId}</td><td>DELETE</td><td>ポートフォリオ削除</td><td>ポートフォリオを削除する</td></tr>
+          <tr><td>/admin/portfolios/{portfolioId}/visibility</td><td>PATCH</td><td>公開 / 非公開切替</td><td>ポートフォリオの公開状態を変更する</td></tr>
+          </tbody>
+        </table>
+
+          </div>
+
+          <div class="fill-block">
+            <div class="fill-label">3. Spring Bootアプリ部分 URL設計（後半） <span class="required">必須</span></div>
+        <table class="doc-table">
+          <thead><tr><th>URL</th><th>HTTPメソッド</th><th>画面/機能</th><th>説明</th></tr></thead>
+          <tbody>
+          <tr><td>/admin/reports</td><td>GET</td><td>通報一覧</td><td>通報・違反コンテンツを一覧表示し、検索できる</td></tr>
+          <tr><td>/admin/reports/{reportId}</td><td>GET</td><td>通報詳細</td><td>通報理由、対象ユーザー、対象コンテンツを確認する</td></tr>
+          <tr><td>/admin/reports/{reportId}/status</td><td>PATCH</td><td>通報対応更新</td><td>対応中、完了などの状態を更新する</td></tr>
+          <tr><td>/admin/reports/{reportId}/actions/warn</td><td>POST</td><td>警告対応</td><td>対象ユーザーへ警告を行う</td></tr>
+          <tr><td>/admin/reports/{reportId}/actions/hide</td><td>POST</td><td>非公開対応</td><td>対象プロフィールやポートフォリオを非公開にする</td></tr>
+          <tr><td>/admin/reports/{reportId}/actions/delete</td><td>POST</td><td>削除対応</td><td>対象コンテンツを削除する</td></tr>
+          <tr><td>/admin/inquiries</td><td>GET</td><td>問い合わせ一覧</td><td>問い合わせを一覧表示し、検索・絞り込みを行う</td></tr>
+          <tr><td>/admin/inquiries/{inquiryId}</td><td>GET</td><td>問い合わせ詳細</td><td>問い合わせ内容と対応履歴を表示する</td></tr>
+          <tr><td>/admin/inquiries/{inquiryId}/reply</td><td>GET</td><td>回答入力画面</td><td>問い合わせ返信フォームを表示する</td></tr>
+          <tr><td>/admin/inquiries/{inquiryId}/reply</td><td>POST</td><td>回答送信</td><td>問い合わせへの返信を送信する</td></tr>
+          <tr><td>/admin/inquiries/{inquiryId}/status</td><td>PATCH</td><td>対応状況更新</td><td>未対応、対応中、完了などを更新する</td></tr>
+          <tr><td>/admin/contents</td><td>GET</td><td>コンテンツ一覧</td><td>お知らせ・記事の一覧を表示する</td></tr>
+          <tr><td>/admin/contents/new</td><td>GET</td><td>コンテンツ作成画面</td><td>お知らせ・記事の新規作成フォームを表示する</td></tr>
+          <tr><td>/admin/contents</td><td>POST</td><td>コンテンツ作成</td><td>お知らせ・記事を新規登録する</td></tr>
+          <tr><td>/admin/contents/{contentId}</td><td>GET</td><td>コンテンツ詳細</td><td>コンテンツ詳細を表示する</td></tr>
+          <tr><td>/admin/contents/{contentId}/edit</td><td>GET</td><td>コンテンツ編集画面</td><td>編集フォームを表示する</td></tr>
+          <tr><td>/admin/contents/{contentId}</td><td>PATCH</td><td>コンテンツ更新</td><td>コンテンツ内容を更新する</td></tr>
+          <tr><td>/admin/contents/{contentId}</td><td>DELETE</td><td>コンテンツ削除</td><td>コンテンツを削除する</td></tr>
+          <tr><td>/admin/contents/{contentId}/visibility</td><td>PATCH</td><td>公開 / 非公開切替</td><td>公開状態を変更する</td></tr>
+          <tr><td>/admin/analytics</td><td>GET</td><td>利用状況分析</td><td>登録数、閲覧数、検索数などの集計を表示する</td></tr>
+          <tr><td>/admin/tags</td><td>GET</td><td>タグ一覧</td><td>検索条件・タグを一覧表示する</td></tr>
+          <tr><td>/admin/tags/new</td><td>GET</td><td>タグ作成画面</td><td>タグ新規作成フォームを表示する</td></tr>
+          <tr><td>/admin/tags</td><td>POST</td><td>タグ作成</td><td>タグを新規登録する</td></tr>
+          <tr><td>/admin/tags/{tagId}/edit</td><td>GET</td><td>タグ編集画面</td><td>タグ編集フォームを表示する</td></tr>
+          <tr><td>/admin/tags/{tagId}</td><td>PATCH</td><td>タグ更新</td><td>タグ名や属性を更新する</td></tr>
+          <tr><td>/admin/tags/{tagId}</td><td>DELETE</td><td>タグ削除</td><td>タグを削除する</td></tr>
+          <tr><td>/admin/tag-groups</td><td>GET</td><td>検索条件カテゴリ一覧</td><td>職種、スキル、価値観などのカテゴリを管理する</td></tr>
+          <tr><td>/admin/mail-deliveries</td><td>GET</td><td>メール配信一覧</td><td>配信履歴を一覧表示する</td></tr>
+          <tr><td>/admin/mail-deliveries/new</td><td>GET</td><td>メール作成画面</td><td>配信メールの作成フォームを表示する</td></tr>
+          <tr><td>/admin/mail-deliveries</td><td>POST</td><td>メール配信登録</td><td>配信対象と本文を登録して送信する</td></tr>
           </tbody>
         </table>
 

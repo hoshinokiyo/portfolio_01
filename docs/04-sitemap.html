@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,42 @@
   <title>サイトマップ -  プロジェクトアーカイブ</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .sitemap-intro {
+      margin: 0 0 18px;
+      color: var(--text-light);
+      line-height: 1.95;
+    }
+
+    .sitemap-tree {
+      margin: 0;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: #fbfbf8;
+      overflow-x: auto;
+      font-size: 14px;
+      line-height: 2;
+      color: var(--text);
+      white-space: pre-wrap;
+    }
+
+    .sitemap-note {
+      margin: 14px 0 0;
+      color: var(--text-light);
+      line-height: 1.85;
+    }
+
+    .sitemap-table-intro {
+      margin: 0 0 16px;
+      color: var(--text-light);
+      line-height: 1.9;
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+    }
+  </style>
 </head>
 <body>
   <button class="hamburger" aria-label="メニュー">
@@ -60,16 +96,66 @@
 
         <div class="fill-block">
           <div class="fill-label">Webサイト構造図 <span class="required">必須</span></div>
-          <div class="fill-hint">トップページから下層ページまでの階層構造をツリー形式で記載</div>
+          <div class="fill-hint">トップページから下層ページまでの階層構造を、採用担当向け導線と求職者向け導線が分かる形で整理</div>
           <div class="fill-content">
-            <p>（ツリー形式のサイト構造図を記載）</p>
+            <p class="sitemap-intro">このサービスは、採用担当と求職者の双方が利用するため、共通ページを起点にしつつ、「採用担当向け導線」と「求職者向け導線」に分けて構造を整理した。採用担当は「人を探す → 人となりを理解する → 面談につなげる」流れ、求職者は「登録する → 自分の人となりを整理する → 公開する」流れで利用する設計としている。</p>
+            <pre class="sitemap-tree">Webサイト構造図
+
+トップページ
+├─ サービス紹介ページ
+├─ 採用担当向け導線
+│  ├─ 採用担当向け利用ガイドページ
+│  ├─ 転職者プロフィール一覧ページ
+│  │  └─ 転職者プロフィール詳細ページ
+│  │     ├─ ひととなりストーリーページ
+│  │     └─ ポートフォリオページ
+│  └─ お問い合わせページ
+├─ 求職者向け導線
+│  ├─ 転職者登録ページ
+│  ├─ プロフィール作成ページ
+│  ├─ ひととなりストーリー作成・編集
+│  ├─ ポートフォリオ登録・編集
+│  └─ プレビュー / 公開確認
+└─ お問い合わせページ</pre>
+            <p class="sitemap-note">共通ページを最上位にまとめたうえで、採用担当側は「一覧から探す → 詳細で理解する → 問い合わせや面談へ進む」流れ、求職者側は「登録する → プロフィールを整える → ストーリーとポートフォリオを公開する」流れが自然に見えるように整理している。</p>
           </div>
         </div>
         <div class="fill-block">
           <div class="fill-label">Webアプリケーション構造図 <span class="required">必須</span></div>
-          <div class="fill-hint">Spring Bootアプリケーションの画面構造をツリー形式で記載</div>
+          <div class="fill-hint">Spring Bootアプリケーションの画面構造を、共通画面と役割別画面が分かる形で整理</div>
           <div class="fill-content">
-            <p>（ツリー形式のアプリ構造図を記載）</p>
+            <p class="sitemap-intro">このWebアプリケーションは、採用担当と求職者の双方が利用するため、共通画面を起点にしつつ、「採用担当向け画面」と「求職者向け画面」に分けて構造を整理した。採用担当は「候補者を探す → 人となりを理解する → 面談につなげる」流れ、求職者は「登録する → 自分の情報を編集する → 公開する」流れで利用する設計としている。また、Spring Bootによる実装を想定し、ログイン後に役割別の画面へ遷移する構成とした。</p>
+            <pre class="sitemap-tree">Webアプリケーション構造図
+
+共通画面
+├─ トップ / ランディング画面
+├─ ログイン画面
+├─ 新規登録画面
+└─ お問い合わせ画面
+
+採用担当向け画面
+├─ 採用担当ダッシュボード
+├─ 転職者プロフィール一覧画面
+│  └─ 転職者プロフィール詳細画面
+│     ├─ ひととなりストーリー画面
+│     └─ ポートフォリオ画面
+├─ 面談依頼・問い合わせ画面
+└─ 利用ガイド画面
+
+求職者向け画面
+├─ 求職者ダッシュボード
+├─ プロフィール編集画面
+├─ ひととなりストーリー編集画面
+├─ ポートフォリオ編集画面
+├─ プレビュー / 公開確認画面
+└─ 登録情報確認画面
+
+将来想定の管理画面
+├─ ユーザー管理
+├─ プロフィール管理
+├─ ポートフォリオ管理
+└─ 問い合わせ管理</pre>
+            <p class="sitemap-note">共通画面を入口に置き、ログイン後に役割ごとの主要導線へ分岐する構成にすることで、採用担当は「一覧から候補者を確認し、詳細を見て面談依頼へ進む」流れ、求職者は「プロフィール・ストーリー・ポートフォリオを編集して公開確認へ進む」流れが分かりやすい構成としている。管理画面は将来拡張として下位に整理し、今回の主要導線から切り分けている。</p>
           </div>
         </div>
 
@@ -80,15 +166,23 @@
 
           <div class="fill-block">
             <div class="fill-label">Webサイト ページ一覧 <span class="required">必須</span></div>
+            <p class="sitemap-table-intro">このページ一覧は、採用担当と求職者の双方の利用導線を整理したものである。採用担当は「候補者を探す → 詳しく知る → 面談につなげる」流れ、求職者は「登録する → 自分の人となりを整理する → 企業に伝える」流れで利用することを想定している。</p>
+            <div class="table-scroll">
         <table class="doc-table">
           <thead><tr><th>No.</th><th>ページ名</th><th>ページの目的</th><th>主要コンテンツ</th></tr></thead>
           <tbody>
-          <tr class="template-row"><td>1</td><td>（トップページ）</td><td>（サービスの魅力を伝え、各ページへ誘導）</td><td>（ヒーロー、サービス紹介、CTA等）</td></tr>
-          <tr class="template-row"><td>2</td><td>（ページ名）</td><td>（目的を記載）</td><td>（コンテンツを記載）</td></tr>
-          <tr class="template-row"><td>3</td><td>（ページ名）</td><td>（目的を記載）</td><td>（コンテンツを記載）</td></tr>
-          <tr class="template-row"><td>…</td><td>…</td><td>…</td><td>…</td></tr>
+          <tr><td>1</td><td>トップページ</td><td>サービスのコンセプトを伝え、採用担当と求職者の双方に興味を持ってもらう</td><td>キャッチコピー、サービス概要、特長、利用の流れ、導線ボタン</td></tr>
+          <tr><td>2</td><td>サービス紹介ページ</td><td>サービスの仕組みや特徴、既存サービスとの違いを理解してもらう</td><td>コンセプト、解決する課題、主な特長、利用メリット、競合との差別化</td></tr>
+          <tr><td>3</td><td>転職者プロフィール一覧ページ</td><td>採用担当が候補者を検索・閲覧できるようにする</td><td>プロフィールカード一覧、検索・絞り込み、おすすめ人材、詳細ページへのリンク</td></tr>
+          <tr><td>4</td><td>転職者プロフィール詳細ページ</td><td>採用担当が候補者の人柄や価値観を詳しく理解できるようにする</td><td>自己紹介、人となり、価値観、経歴、スキル、キャリアの希望、ストーリー・ポートフォリオへの導線</td></tr>
+          <tr><td>5</td><td>ひととなりストーリーページ</td><td>候補者の経験の背景や仕事観をストーリー形式で伝え、人物理解を深める</td><td>キャリアストーリー、仕事観、人生の転機、働くうえで大切にしていること</td></tr>
+          <tr><td>6</td><td>ポートフォリオページ</td><td>候補者の制作物や実績だけでなく、思考プロセスも伝える</td><td>制作物一覧、プロジェクト概要、担当範囲、課題と解決方法、工夫した点、学び</td></tr>
+          <tr><td>7</td><td>転職者登録／プロフィール作成ページ</td><td>求職者が自分のプロフィールや人となり情報を登録・編集できるようにする</td><td>アカウント登録、プロフィール入力、人となり入力、価値観入力、プレビュー機能</td></tr>
+          <tr><td>8</td><td>採用担当向け利用ガイドページ</td><td>採用担当がサービスの使い方や活用方法を理解できるようにする</td><td>サービス利用方法、人材検索方法、面談依頼の流れ、活用イメージ</td></tr>
+          <tr><td>9</td><td>お問い合わせページ</td><td>ユーザーからの問い合わせやサポート依頼を受け付ける</td><td>問い合わせフォーム、よくある質問、サポート連絡先</td></tr>
           </tbody>
         </table>
+            </div>
 
           </div>
 
@@ -156,3 +250,4 @@
   <script src="../js/main.js"></script>
 </body>
 </html>
+

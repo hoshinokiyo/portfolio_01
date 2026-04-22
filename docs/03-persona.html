@@ -1,10 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ペルソナシート -  プロジェクトアーカイブ</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <title>ペルソナシート - プロジェクトアーカイブ</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="../css/style.css">
   <style>
     .persona-intro {
@@ -13,7 +15,7 @@
       line-height: 1.9;
     }
 
-    .persona-group + .persona-group {
+    .persona-group+.persona-group {
       margin-top: 26px;
     }
 
@@ -101,7 +103,7 @@
       line-height: 1.9;
     }
 
-    .persona-detail-list li + li {
+    .persona-detail-list li+li {
       margin-top: 6px;
     }
 
@@ -109,7 +111,7 @@
       color: var(--text);
     }
 
-    .journey-card + .journey-card {
+    .journey-card+.journey-card {
       margin-top: 24px;
     }
 
@@ -149,21 +151,22 @@
     }
   </style>
 </head>
+
 <body>
   <button class="hamburger" aria-label="メニュー">
     <span></span><span></span><span></span>
   </button>
 
   <div class="page-wrapper">
-  <aside class="sidebar" data-nav-level="docs"></aside>
+    <aside class="sidebar" data-nav-level="docs"></aside>
 
     <main class="main-content">
       <header class="doc-header">
         <div class="doc-category">DOCUMENT 03</div>
         <h1 class="doc-title">ペルソナシート</h1>
         <div class="doc-meta">
-          <span><span class="material-symbols-outlined icon-sm">calendar_today</span> 作成日：2026-XX-XX</span>
-          <span><span class="material-symbols-outlined icon-sm">person</span> 作成者：（氏名を入力）</span>
+          <span><span class="material-symbols-outlined icon-sm">calendar_today</span> 作成日：2026-03-17～</span>
+          <span><span class="material-symbols-outlined icon-sm">person</span> 作成者：星野 喜世子</span>
           <span><span class="material-symbols-outlined icon-sm">push_pin</span> Ver 1.0</span>
         </div>
       </header>
@@ -180,7 +183,8 @@
           </div>
           <div class="external-link-input">
             <input type="text" placeholder="https://docs.google.com/spreadsheets/d/xxxxx" id="external-link-03">
-            <a href="#" class="link-btn" onclick="window.open(document.getElementById('external-link-03').value || 'https://docs.google.com', '_blank'); return false;">
+            <a href="#" class="link-btn"
+              onclick="window.open(document.getElementById('external-link-03').value || 'https://docs.google.com', '_blank'); return false;">
               <span class="material-symbols-outlined">open_in_new</span>
               開く
             </a>
@@ -202,92 +206,123 @@
         <section class="section" id="sec1">
           <h2 class="section-title"><span class="section-icon">1</span> 基本プロフィール</h2>
 
-        <div class="fill-block">
-          <div class="fill-label">ペルソナ基本情報 <span class="required">必須</span></div>
-          <div class="fill-hint">架空の人物として具体的に設定してください</div>
-                    <div class="fill-content">
-            <p class="persona-intro">本サービスでは、採用担当と求職者の双方の課題を整理するため、メインユーザー2名・サブユーザー2名の計4名のペルソナを設定した。役割ごとの視点の違いが見えるよう、同一フォーマットで整理している。</p>
+          <div class="fill-block">
+            <div class="fill-label">ペルソナ基本情報 <span class="required">必須</span></div>
+            <div class="fill-hint">架空の人物として具体的に設定してください</div>
+            <div class="fill-content">
+              <p class="persona-intro">
+                本サービスでは、採用担当と求職者の双方の課題を整理するため、メインユーザー2名・サブユーザー2名の計4名のペルソナを設定した。役割ごとの視点の違いが見えるよう、同一フォーマットで整理している。</p>
 
-            <section class="persona-group" aria-labelledby="persona-main">
-              <h3 class="persona-group-title" id="persona-main">メインユーザー</h3>
-              <div class="persona-grid">
-                <article class="persona-card">
-                  <div class="persona-role">Main User</div>
-                  <h4 class="persona-name">佐藤 恒一</h4>
-                  <p class="persona-job">株式会社アクトリンク 人事部 採用担当主任</p>
-                  <dl class="persona-facts">
-                    <dt>年齢</dt><dd>35歳</dd>
-                    <dt>性別</dt><dd>男性</dd>
-                    <dt>居住地</dt><dd>東京都江東区</dd>
-                    <dt>年収</dt><dd>580万円</dd>
-                    <dt>家族構成</dt><dd>妻、長女（4歳）の3人暮らし</dd>
-                    <dt>学歴</dt><dd>私立大学 経営学部卒</dd>
-                  </dl>
-                  <p class="persona-story-title">人物像</p>
-                  <p class="persona-story">中途採用を中心に担当しており、現場部門との調整や面接日程の管理など複数業務を並行して行っている。書類選考ではスキルや経歴は確認できるが、実際に会ってみると印象が異なることも多く、採用後のミスマッチに課題を感じている。短い面接時間の前に、候補者の人柄や仕事観を知れるサービスに関心がある。</p>
-                </article>
+              <section class="persona-group" aria-labelledby="persona-main">
+                <h3 class="persona-group-title" id="persona-main">メインユーザー</h3>
+                <div class="persona-grid">
+                  <article class="persona-card">
+                    <div class="persona-role">Main User</div>
+                    <h4 class="persona-name">佐藤 恒一</h4>
+                    <p class="persona-job">株式会社アクトリンク 人事部 採用担当主任</p>
+                    <dl class="persona-facts">
+                      <dt>年齢</dt>
+                      <dd>35歳</dd>
+                      <dt>性別</dt>
+                      <dd>男性</dd>
+                      <dt>居住地</dt>
+                      <dd>東京都江東区</dd>
+                      <dt>年収</dt>
+                      <dd>580万円</dd>
+                      <dt>家族構成</dt>
+                      <dd>妻、長女（4歳）の3人暮らし</dd>
+                      <dt>学歴</dt>
+                      <dd>私立大学 経営学部卒</dd>
+                    </dl>
+                    <p class="persona-story-title">人物像</p>
+                    <p class="persona-story">
+                      中途採用を中心に担当しており、現場部門との調整や面接日程の管理など複数業務を並行して行っている。書類選考ではスキルや経歴は確認できるが、実際に会ってみると印象が異なることも多く、採用後のミスマッチに課題を感じている。短い面接時間の前に、候補者の人柄や仕事観を知れるサービスに関心がある。
+                    </p>
+                  </article>
 
-                <article class="persona-card">
-                  <div class="persona-role">Main User</div>
-                  <h4 class="persona-name">中村 美咲</h4>
-                  <p class="persona-job">株式会社リーフデザイン 経営管理部 人事・採用マネージャー</p>
-                  <dl class="persona-facts">
-                    <dt>年齢</dt><dd>38歳</dd>
-                    <dt>性別</dt><dd>女性</dd>
-                    <dt>居住地</dt><dd>神奈川県横浜市</dd>
-                    <dt>年収</dt><dd>680万円</dd>
-                    <dt>家族構成</dt><dd>夫、長男（8歳）、長女（5歳）の4人暮らし</dd>
-                    <dt>学歴</dt><dd>国立大学 文学部卒</dd>
-                  </dl>
-                  <p class="persona-story-title">人物像</p>
-                  <p class="persona-story">デザイン・制作会社で採用を担当しており、デザイナーやディレクターなどクリエイティブ職の中途採用に携わっている。ポートフォリオだけでは人柄やコミュニケーションの相性が分かりづらく、チームに馴染めるかどうかを重視している。スキルだけでなく、候補者の考え方や働く姿勢を事前に知りたいと考えている。</p>
-                </article>
-              </div>
-            </section>
+                  <article class="persona-card">
+                    <div class="persona-role">Main User</div>
+                    <h4 class="persona-name">中村 美咲</h4>
+                    <p class="persona-job">株式会社リーフデザイン 経営管理部 人事・採用マネージャー</p>
+                    <dl class="persona-facts">
+                      <dt>年齢</dt>
+                      <dd>38歳</dd>
+                      <dt>性別</dt>
+                      <dd>女性</dd>
+                      <dt>居住地</dt>
+                      <dd>神奈川県横浜市</dd>
+                      <dt>年収</dt>
+                      <dd>680万円</dd>
+                      <dt>家族構成</dt>
+                      <dd>夫、長男（8歳）、長女（5歳）の4人暮らし</dd>
+                      <dt>学歴</dt>
+                      <dd>国立大学 文学部卒</dd>
+                    </dl>
+                    <p class="persona-story-title">人物像</p>
+                    <p class="persona-story">
+                      デザイン・制作会社で採用を担当しており、デザイナーやディレクターなどクリエイティブ職の中途採用に携わっている。ポートフォリオだけでは人柄やコミュニケーションの相性が分かりづらく、チームに馴染めるかどうかを重視している。スキルだけでなく、候補者の考え方や働く姿勢を事前に知りたいと考えている。
+                    </p>
+                  </article>
+                </div>
+              </section>
 
-            <section class="persona-group" aria-labelledby="persona-sub">
-              <h3 class="persona-group-title" id="persona-sub">サブユーザー</h3>
-              <div class="persona-grid">
-                <article class="persona-card">
-                  <div class="persona-role">Sub User</div>
-                  <h4 class="persona-name">田村 恒一</h4>
-                  <p class="persona-job">株式会社東洋フーズ 営業部 主任</p>
-                  <dl class="persona-facts">
-                    <dt>年齢</dt><dd>39歳</dd>
-                    <dt>性別</dt><dd>男性</dd>
-                    <dt>居住地</dt><dd>埼玉県川口市</dd>
-                    <dt>年収</dt><dd>470万円</dd>
-                    <dt>家族構成</dt><dd>妻、長男（7歳）、長女（3歳）の4人暮らし</dd>
-                    <dt>学歴</dt><dd>私立大学 経済学部卒</dd>
-                  </dl>
-                  <p class="persona-story-title">人物像</p>
-                  <p class="persona-story">食品メーカーで長く法人営業を担当してきたが、管理職経験や華やかな実績はない。一方で、顧客との信頼関係づくりや社内調整力には自信があり、誠実さや粘り強さを評価されてきた。職務経歴書では数字以外の強みが伝わりにくいことに悩んでいる。</p>
-                </article>
+              <section class="persona-group" aria-labelledby="persona-sub">
+                <h3 class="persona-group-title" id="persona-sub">サブユーザー</h3>
+                <div class="persona-grid">
+                  <article class="persona-card">
+                    <div class="persona-role">Sub User</div>
+                    <h4 class="persona-name">田村 恒一</h4>
+                    <p class="persona-job">株式会社東洋フーズ 営業部 主任</p>
+                    <dl class="persona-facts">
+                      <dt>年齢</dt>
+                      <dd>39歳</dd>
+                      <dt>性別</dt>
+                      <dd>男性</dd>
+                      <dt>居住地</dt>
+                      <dd>埼玉県川口市</dd>
+                      <dt>年収</dt>
+                      <dd>470万円</dd>
+                      <dt>家族構成</dt>
+                      <dd>妻、長男（7歳）、長女（3歳）の4人暮らし</dd>
+                      <dt>学歴</dt>
+                      <dd>私立大学 経済学部卒</dd>
+                    </dl>
+                    <p class="persona-story-title">人物像</p>
+                    <p class="persona-story">
+                      食品メーカーで長く法人営業を担当してきたが、管理職経験や華やかな実績はない。一方で、顧客との信頼関係づくりや社内調整力には自信があり、誠実さや粘り強さを評価されてきた。職務経歴書では数字以外の強みが伝わりにくいことに悩んでいる。
+                    </p>
+                  </article>
 
-                <article class="persona-card">
-                  <div class="persona-role">Sub User</div>
-                  <h4 class="persona-name">石井 由美</h4>
-                  <p class="persona-job">株式会社サンライトケア 事務部 医療事務スタッフ</p>
-                  <dl class="persona-facts">
-                    <dt>年齢</dt><dd>43歳</dd>
-                    <dt>性別</dt><dd>女性</dd>
-                    <dt>居住地</dt><dd>千葉県船橋市</dd>
-                    <dt>年収</dt><dd>360万円</dd>
-                    <dt>家族構成</dt><dd>夫、長女（15歳）の3人暮らし</dd>
-                    <dt>学歴</dt><dd>短期大学 英文学科卒</dd>
-                  </dl>
-                  <p class="persona-story-title">人物像</p>
-                  <p class="persona-story">医療事務として長年勤務し、正確さや気配り、患者対応で信頼を得てきた。専門資格や突出したスキルは少ないが、周囲への配慮や丁寧な仕事ぶりには自信がある。年齢的に未経験職種への挑戦に不安があり、書類だけで判断されることに苦手意識を持っている。</p>
-                </article>
-              </div>
-            </section>
+                  <article class="persona-card">
+                    <div class="persona-role">Sub User</div>
+                    <h4 class="persona-name">石井 由美</h4>
+                    <p class="persona-job">株式会社サンライトケア 事務部 医療事務スタッフ</p>
+                    <dl class="persona-facts">
+                      <dt>年齢</dt>
+                      <dd>43歳</dd>
+                      <dt>性別</dt>
+                      <dd>女性</dd>
+                      <dt>居住地</dt>
+                      <dd>千葉県船橋市</dd>
+                      <dt>年収</dt>
+                      <dd>360万円</dd>
+                      <dt>家族構成</dt>
+                      <dd>夫、長女（15歳）の3人暮らし</dd>
+                      <dt>学歴</dt>
+                      <dd>短期大学 英文学科卒</dd>
+                    </dl>
+                    <p class="persona-story-title">人物像</p>
+                    <p class="persona-story">
+                      医療事務として長年勤務し、正確さや気配り、患者対応で信頼を得てきた。専門資格や突出したスキルは少ないが、周囲への配慮や丁寧な仕事ぶりには自信がある。年齢的に未経験職種への挑戦に不安があり、書類だけで判断されることに苦手意識を持っている。
+                    </p>
+                  </article>
+                </div>
+              </section>
+            </div>
           </div>
-        </div>
 
-        </section
-
-                <section class="section" id="sec2">
-          <h2 class="section-title"><span class="section-icon">2</span> ライフスタイル</h2>
+        </section <section class="section" id="sec2">
+        <h2 class="section-title"><span class="section-icon">2</span> ライフスタイル</h2>
 
         <div class="fill-block">
           <div class="fill-label">平日のタイムスケジュール <span class="required">必須</span></div>
@@ -301,20 +336,74 @@
                   <h4 class="persona-name">佐藤 恒一</h4>
                   <p class="persona-job">株式会社アクトリンク 人事部 採用担当主任</p>
                   <div class="timeline-list">
-                    <div class="timeline-item"><div class="timeline-time">06:30</div><div class="timeline-body">起床、身支度、朝食<span class="timeline-device">使用サービス・デバイス：iPhoneで天気アプリ、ニュースアプリ</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">07:30</div><div class="timeline-body">子どもの支度を手伝いながら出勤準備<span class="timeline-device">使用サービス・デバイス：LINE、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">08:15</div><div class="timeline-body">通勤中にメール確認、当日の面接予定をチェック<span class="timeline-device">使用サービス・デバイス：Gmail、Googleカレンダー、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">09:00</div><div class="timeline-body">出社、応募者管理画面や社内チャットを確認<span class="timeline-device">使用サービス・デバイス：採用管理システム、Slack、ノートPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">10:00</div><div class="timeline-body">書類選考、候補者プロフィール確認<span class="timeline-device">使用サービス・デバイス：求人媒体、採用管理システム、ノートPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">11:30</div><div class="timeline-body">現場担当者と面接候補者の共有<span class="timeline-device">使用サービス・デバイス：Google Meet、Slack、ノートPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">12:30</div><div class="timeline-body">昼休憩<span class="timeline-device">使用サービス・デバイス：スマホでニュース、SNS</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">13:30</div><div class="timeline-body">エージェント対応、面接日程調整<span class="timeline-device">使用サービス・デバイス：メール、Googleカレンダー、ノートPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">15:00</div><div class="timeline-body">候補者の詳細確認、人柄が分かる情報を収集<span class="timeline-device">使用サービス・デバイス：LinkedIn、求人媒体、ノートPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">17:30</div><div class="timeline-body">面接実施または面接結果の回収<span class="timeline-device">使用サービス・デバイス：Zoom、採用管理システム、ノートPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">19:00</div><div class="timeline-body">退勤、帰宅<span class="timeline-device">使用サービス・デバイス：iPhoneでメッセージ確認</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">20:00</div><div class="timeline-body">夕食、家族時間<span class="timeline-device">使用サービス・デバイス：テレビ、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">22:00</div><div class="timeline-body">翌日の予定確認、少しだけ仕事の整理<span class="timeline-device">使用サービス・デバイス：Googleカレンダー、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">23:00</div><div class="timeline-body">就寝</div></div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">06:30</div>
+                      <div class="timeline-body">起床、身支度、朝食<span
+                          class="timeline-device">使用サービス・デバイス：iPhoneで天気アプリ、ニュースアプリ</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">07:30</div>
+                      <div class="timeline-body">子どもの支度を手伝いながら出勤準備<span
+                          class="timeline-device">使用サービス・デバイス：LINE、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">08:15</div>
+                      <div class="timeline-body">通勤中にメール確認、当日の面接予定をチェック<span
+                          class="timeline-device">使用サービス・デバイス：Gmail、Googleカレンダー、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">09:00</div>
+                      <div class="timeline-body">出社、応募者管理画面や社内チャットを確認<span
+                          class="timeline-device">使用サービス・デバイス：採用管理システム、Slack、ノートPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">10:00</div>
+                      <div class="timeline-body">書類選考、候補者プロフィール確認<span
+                          class="timeline-device">使用サービス・デバイス：求人媒体、採用管理システム、ノートPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">11:30</div>
+                      <div class="timeline-body">現場担当者と面接候補者の共有<span class="timeline-device">使用サービス・デバイス：Google
+                          Meet、Slack、ノートPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">12:30</div>
+                      <div class="timeline-body">昼休憩<span class="timeline-device">使用サービス・デバイス：スマホでニュース、SNS</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">13:30</div>
+                      <div class="timeline-body">エージェント対応、面接日程調整<span
+                          class="timeline-device">使用サービス・デバイス：メール、Googleカレンダー、ノートPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">15:00</div>
+                      <div class="timeline-body">候補者の詳細確認、人柄が分かる情報を収集<span
+                          class="timeline-device">使用サービス・デバイス：LinkedIn、求人媒体、ノートPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">17:30</div>
+                      <div class="timeline-body">面接実施または面接結果の回収<span
+                          class="timeline-device">使用サービス・デバイス：Zoom、採用管理システム、ノートPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">19:00</div>
+                      <div class="timeline-body">退勤、帰宅<span class="timeline-device">使用サービス・デバイス：iPhoneでメッセージ確認</span>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">20:00</div>
+                      <div class="timeline-body">夕食、家族時間<span class="timeline-device">使用サービス・デバイス：テレビ、iPhone</span>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">22:00</div>
+                      <div class="timeline-body">翌日の予定確認、少しだけ仕事の整理<span
+                          class="timeline-device">使用サービス・デバイス：Googleカレンダー、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">23:00</div>
+                      <div class="timeline-body">就寝</div>
+                    </div>
                   </div>
                 </article>
 
@@ -323,19 +412,70 @@
                   <h4 class="persona-name">中村 美咲</h4>
                   <p class="persona-job">株式会社リーフデザイン 経営管理部 人事・採用マネージャー</p>
                   <div class="timeline-list">
-                    <div class="timeline-item"><div class="timeline-time">06:00</div><div class="timeline-body">起床、朝食準備、子どもの登校準備<span class="timeline-device">使用サービス・デバイス：iPhoneで天気、学校連絡アプリ</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">07:30</div><div class="timeline-body">家族を送り出し、自分も出勤準備<span class="timeline-device">使用サービス・デバイス：LINE、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">08:20</div><div class="timeline-body">通勤中に採用メールやポートフォリオ確認<span class="timeline-device">使用サービス・デバイス：Gmail、ブラウザ、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">09:00</div><div class="timeline-body">出社、社内メンバーと当日の採用進捗確認<span class="timeline-device">使用サービス・デバイス：Slack、Googleスプレッドシート、ノートPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">10:30</div><div class="timeline-body">候補者のポートフォリオやプロフィールを確認<span class="timeline-device">使用サービス・デバイス：ブラウザ、Notion、ノートPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">12:00</div><div class="timeline-body">昼休憩<span class="timeline-device">使用サービス・デバイス：Instagram、ニュースアプリ、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">13:00</div><div class="timeline-body">デザイナー職の書類選考、現場責任者へ共有<span class="timeline-device">使用サービス・デバイス：採用管理システム、Slack、ノートPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">15:00</div><div class="timeline-body">オンライン面談またはエージェント打ち合わせ<span class="timeline-device">使用サービス・デバイス：Google Meet、Zoom、ノートPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">17:00</div><div class="timeline-body">採用計画や求人内容の更新<span class="timeline-device">使用サービス・デバイス：Googleドキュメント、求人媒体、ノートPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">18:30</div><div class="timeline-body">退勤、買い物をして帰宅<span class="timeline-device">使用サービス・デバイス：地図アプリ、決済アプリ、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">20:00</div><div class="timeline-body">夕食、家事、子どもの宿題を見る<span class="timeline-device">使用サービス・デバイス：iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">22:30</div><div class="timeline-body">自宅で軽くSNSや採用トレンドを見る<span class="timeline-device">使用サービス・デバイス：X、note、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">23:30</div><div class="timeline-body">就寝</div></div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">06:00</div>
+                      <div class="timeline-body">起床、朝食準備、子どもの登校準備<span
+                          class="timeline-device">使用サービス・デバイス：iPhoneで天気、学校連絡アプリ</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">07:30</div>
+                      <div class="timeline-body">家族を送り出し、自分も出勤準備<span
+                          class="timeline-device">使用サービス・デバイス：LINE、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">08:20</div>
+                      <div class="timeline-body">通勤中に採用メールやポートフォリオ確認<span
+                          class="timeline-device">使用サービス・デバイス：Gmail、ブラウザ、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">09:00</div>
+                      <div class="timeline-body">出社、社内メンバーと当日の採用進捗確認<span
+                          class="timeline-device">使用サービス・デバイス：Slack、Googleスプレッドシート、ノートPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">10:30</div>
+                      <div class="timeline-body">候補者のポートフォリオやプロフィールを確認<span
+                          class="timeline-device">使用サービス・デバイス：ブラウザ、Notion、ノートPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">12:00</div>
+                      <div class="timeline-body">昼休憩<span
+                          class="timeline-device">使用サービス・デバイス：Instagram、ニュースアプリ、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">13:00</div>
+                      <div class="timeline-body">デザイナー職の書類選考、現場責任者へ共有<span
+                          class="timeline-device">使用サービス・デバイス：採用管理システム、Slack、ノートPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">15:00</div>
+                      <div class="timeline-body">オンライン面談またはエージェント打ち合わせ<span class="timeline-device">使用サービス・デバイス：Google
+                          Meet、Zoom、ノートPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">17:00</div>
+                      <div class="timeline-body">採用計画や求人内容の更新<span
+                          class="timeline-device">使用サービス・デバイス：Googleドキュメント、求人媒体、ノートPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">18:30</div>
+                      <div class="timeline-body">退勤、買い物をして帰宅<span
+                          class="timeline-device">使用サービス・デバイス：地図アプリ、決済アプリ、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">20:00</div>
+                      <div class="timeline-body">夕食、家事、子どもの宿題を見る<span class="timeline-device">使用サービス・デバイス：iPhone</span>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">22:30</div>
+                      <div class="timeline-body">自宅で軽くSNSや採用トレンドを見る<span
+                          class="timeline-device">使用サービス・デバイス：X、note、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">23:30</div>
+                      <div class="timeline-body">就寝</div>
+                    </div>
                   </div>
                 </article>
               </div>
@@ -349,18 +489,64 @@
                   <h4 class="persona-name">田村 恒一</h4>
                   <p class="persona-job">株式会社東洋フーズ 営業部 主任</p>
                   <div class="timeline-list">
-                    <div class="timeline-item"><div class="timeline-time">06:15</div><div class="timeline-body">起床、朝食、身支度<span class="timeline-device">使用サービス・デバイス：iPhoneで天気、ニュース</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">07:15</div><div class="timeline-body">子どもの準備を手伝ってから出勤<span class="timeline-device">使用サービス・デバイス：LINE、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">08:10</div><div class="timeline-body">通勤中に転職サイトを眺める<span class="timeline-device">使用サービス・デバイス：求人アプリ、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">09:00</div><div class="timeline-body">出社、メール確認、営業先の予定整理<span class="timeline-device">使用サービス・デバイス：Outlook、Googleカレンダー、会社PC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">10:00</div><div class="timeline-body">取引先訪問、商談<span class="timeline-device">使用サービス・デバイス：スマホ、会社支給PC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">12:30</div><div class="timeline-body">昼休憩に転職サイトや企業情報を確認<span class="timeline-device">使用サービス・デバイス：エンミドルの転職、Wantedly、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">14:00</div><div class="timeline-body">社内打ち合わせ、見積作成<span class="timeline-device">使用サービス・デバイス：Excel、メール、会社PC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">17:30</div><div class="timeline-body">日報入力、翌日準備<span class="timeline-device">使用サービス・デバイス：社内システム、会社PC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">19:00</div><div class="timeline-body">帰宅途中に気になる求人を保存<span class="timeline-device">使用サービス・デバイス：求人アプリ、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">20:00</div><div class="timeline-body">夕食、家族時間<span class="timeline-device">使用サービス・デバイス：iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">21:30</div><div class="timeline-body">転職サービスでプロフィール更新、自分の強みを考える<span class="timeline-device">使用サービス・デバイス：転職サイト、メモアプリ、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">23:00</div><div class="timeline-body">就寝</div></div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">06:15</div>
+                      <div class="timeline-body">起床、朝食、身支度<span
+                          class="timeline-device">使用サービス・デバイス：iPhoneで天気、ニュース</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">07:15</div>
+                      <div class="timeline-body">子どもの準備を手伝ってから出勤<span
+                          class="timeline-device">使用サービス・デバイス：LINE、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">08:10</div>
+                      <div class="timeline-body">通勤中に転職サイトを眺める<span
+                          class="timeline-device">使用サービス・デバイス：求人アプリ、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">09:00</div>
+                      <div class="timeline-body">出社、メール確認、営業先の予定整理<span
+                          class="timeline-device">使用サービス・デバイス：Outlook、Googleカレンダー、会社PC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">10:00</div>
+                      <div class="timeline-body">取引先訪問、商談<span class="timeline-device">使用サービス・デバイス：スマホ、会社支給PC</span>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">12:30</div>
+                      <div class="timeline-body">昼休憩に転職サイトや企業情報を確認<span
+                          class="timeline-device">使用サービス・デバイス：エンミドルの転職、Wantedly、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">14:00</div>
+                      <div class="timeline-body">社内打ち合わせ、見積作成<span
+                          class="timeline-device">使用サービス・デバイス：Excel、メール、会社PC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">17:30</div>
+                      <div class="timeline-body">日報入力、翌日準備<span class="timeline-device">使用サービス・デバイス：社内システム、会社PC</span>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">19:00</div>
+                      <div class="timeline-body">帰宅途中に気になる求人を保存<span
+                          class="timeline-device">使用サービス・デバイス：求人アプリ、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">20:00</div>
+                      <div class="timeline-body">夕食、家族時間<span class="timeline-device">使用サービス・デバイス：iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">21:30</div>
+                      <div class="timeline-body">転職サービスでプロフィール更新、自分の強みを考える<span
+                          class="timeline-device">使用サービス・デバイス：転職サイト、メモアプリ、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">23:00</div>
+                      <div class="timeline-body">就寝</div>
+                    </div>
                   </div>
                 </article>
 
@@ -369,19 +555,69 @@
                   <h4 class="persona-name">石井 由美</h4>
                   <p class="persona-job">株式会社サンライトケア 事務部 医療事務スタッフ</p>
                   <div class="timeline-list">
-                    <div class="timeline-item"><div class="timeline-time">05:50</div><div class="timeline-body">起床、朝食準備、家事<span class="timeline-device">使用サービス・デバイス：iPhoneで天気、家計アプリ</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">07:00</div><div class="timeline-body">家族を送り出し、自分も出勤準備<span class="timeline-device">使用サービス・デバイス：LINE、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">08:00</div><div class="timeline-body">通勤中に転職記事や求人を確認<span class="timeline-device">使用サービス・デバイス：求人サイト、Web記事、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">08:45</div><div class="timeline-body">出勤、受付準備、予約確認<span class="timeline-device">使用サービス・デバイス：病院システム、デスクトップPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">10:00</div><div class="timeline-body">受付、会計、患者対応<span class="timeline-device">使用サービス・デバイス：院内システム、電話</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">12:30</div><div class="timeline-body">昼休憩<span class="timeline-device">使用サービス・デバイス：スマホで転職体験談、ニュースサイト</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">13:30</div><div class="timeline-body">午後の受付業務、書類整理<span class="timeline-device">使用サービス・デバイス：院内システム、デスクトップPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">17:30</div><div class="timeline-body">退勤<span class="timeline-device">使用サービス・デバイス：iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">18:30</div><div class="timeline-body">買い物、帰宅、夕食準備<span class="timeline-device">使用サービス・デバイス：メモアプリ、決済アプリ、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">20:30</div><div class="timeline-body">家事が落ち着いた後に転職サイトを確認<span class="timeline-device">使用サービス・デバイス：エンミドルの転職、企業HP、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">21:30</div><div class="timeline-body">自己PR文を少しずつ作成<span class="timeline-device">使用サービス・デバイス：メモアプリ、ノートPC</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">22:30</div><div class="timeline-body">就寝準備<span class="timeline-device">使用サービス・デバイス：YouTube、iPhone</span></div></div>
-                    <div class="timeline-item"><div class="timeline-time">23:00</div><div class="timeline-body">就寝</div></div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">05:50</div>
+                      <div class="timeline-body">起床、朝食準備、家事<span
+                          class="timeline-device">使用サービス・デバイス：iPhoneで天気、家計アプリ</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">07:00</div>
+                      <div class="timeline-body">家族を送り出し、自分も出勤準備<span
+                          class="timeline-device">使用サービス・デバイス：LINE、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">08:00</div>
+                      <div class="timeline-body">通勤中に転職記事や求人を確認<span
+                          class="timeline-device">使用サービス・デバイス：求人サイト、Web記事、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">08:45</div>
+                      <div class="timeline-body">出勤、受付準備、予約確認<span
+                          class="timeline-device">使用サービス・デバイス：病院システム、デスクトップPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">10:00</div>
+                      <div class="timeline-body">受付、会計、患者対応<span class="timeline-device">使用サービス・デバイス：院内システム、電話</span>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">12:30</div>
+                      <div class="timeline-body">昼休憩<span class="timeline-device">使用サービス・デバイス：スマホで転職体験談、ニュースサイト</span>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">13:30</div>
+                      <div class="timeline-body">午後の受付業務、書類整理<span
+                          class="timeline-device">使用サービス・デバイス：院内システム、デスクトップPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">17:30</div>
+                      <div class="timeline-body">退勤<span class="timeline-device">使用サービス・デバイス：iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">18:30</div>
+                      <div class="timeline-body">買い物、帰宅、夕食準備<span
+                          class="timeline-device">使用サービス・デバイス：メモアプリ、決済アプリ、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">20:30</div>
+                      <div class="timeline-body">家事が落ち着いた後に転職サイトを確認<span
+                          class="timeline-device">使用サービス・デバイス：エンミドルの転職、企業HP、iPhone</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">21:30</div>
+                      <div class="timeline-body">自己PR文を少しずつ作成<span
+                          class="timeline-device">使用サービス・デバイス：メモアプリ、ノートPC</span></div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">22:30</div>
+                      <div class="timeline-body">就寝準備<span class="timeline-device">使用サービス・デバイス：YouTube、iPhone</span>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-time">23:00</div>
+                      <div class="timeline-body">就寝</div>
+                    </div>
                   </div>
                 </article>
               </div>
@@ -401,7 +637,8 @@
                   <h4 class="persona-name">佐藤 恒一</h4>
                   <p class="persona-job">株式会社アクトリンク 人事部 採用担当主任</p>
                   <p class="persona-story-title">休日の過ごし方</p>
-                  <p class="persona-story">休日は家族と過ごす時間を優先しており、午前中は子どもと公園やショッピングモールへ出かけることが多い。午後は家でゆっくり過ごしながら、翌週の予定を軽く確認することもある。</p>
+                  <p class="persona-story">
+                    休日は家族と過ごす時間を優先しており、午前中は子どもと公園やショッピングモールへ出かけることが多い。午後は家でゆっくり過ごしながら、翌週の予定を軽く確認することもある。</p>
                   <p class="persona-story-title" style="margin-top: 14px;">趣味・関心事</p>
                   <p class="persona-story">家族で出かけること、スポーツ観戦、コーヒーを飲みながらリラックスすること</p>
                 </article>
@@ -411,7 +648,8 @@
                   <h4 class="persona-name">中村 美咲</h4>
                   <p class="persona-job">株式会社リーフデザイン 経営管理部 人事・採用マネージャー</p>
                   <p class="persona-story-title">休日の過ごし方</p>
-                  <p class="persona-story">休日は子どもの予定に合わせて過ごすことが多く、午前中は家事や買い物、午後は家族で外出することが多い。夜は自分の時間を少し確保して、仕事や採用のヒントになる情報を見ることもある。</p>
+                  <p class="persona-story">
+                    休日は子どもの予定に合わせて過ごすことが多く、午前中は家事や買い物、午後は家族で外出することが多い。夜は自分の時間を少し確保して、仕事や採用のヒントになる情報を見ることもある。</p>
                   <p class="persona-story-title" style="margin-top: 14px;">趣味・関心事</p>
                   <p class="persona-story">カフェ巡り、雑貨やインテリアを見ること、デザイン系のSNSを眺めること</p>
                 </article>
@@ -426,7 +664,8 @@
                   <h4 class="persona-name">田村 恒一</h4>
                   <p class="persona-job">株式会社東洋フーズ 営業部 主任</p>
                   <p class="persona-story-title">休日の過ごし方</p>
-                  <p class="persona-story">休日は家族と過ごすことを大切にしており、午前中は子どもと遊んだり、家族で買い物に出かけることが多い。夜に少し時間ができると、転職サイトを見たり、自分の今後について考えたりしている。</p>
+                  <p class="persona-story">
+                    休日は家族と過ごすことを大切にしており、午前中は子どもと遊んだり、家族で買い物に出かけることが多い。夜に少し時間ができると、転職サイトを見たり、自分の今後について考えたりしている。</p>
                   <p class="persona-story-title" style="margin-top: 14px;">趣味・関心事</p>
                   <p class="persona-story">子どもと遊ぶこと、ドライブ、スポーツ中継を見ること</p>
                 </article>
@@ -436,7 +675,8 @@
                   <h4 class="persona-name">石井 由美</h4>
                   <p class="persona-job">株式会社サンライトケア 事務部 医療事務スタッフ</p>
                   <p class="persona-story-title">休日の過ごし方</p>
-                  <p class="persona-story">休日は家事を中心に過ごしつつ、買い物や家族との外出をしている。自分だけの時間は多くないが、夜に落ち着いた時間ができると、今後の働き方や転職のことを少しずつ調べている。</p>
+                  <p class="persona-story">
+                    休日は家事を中心に過ごしつつ、買い物や家族との外出をしている。自分だけの時間は多くないが、夜に落ち着いた時間ができると、今後の働き方や転職のことを少しずつ調べている。</p>
                   <p class="persona-story-title" style="margin-top: 14px;">趣味・関心事</p>
                   <p class="persona-story">ドラマ鑑賞、雑貨店を見ること、家計管理、料理</p>
                 </article>
@@ -515,264 +755,276 @@
 
         </section>
 
-                <section class="section" id="sec3">
+        <section class="section" id="sec3">
           <h2 class="section-title"><span class="section-icon">3</span> デジタル行動</h2>
 
-        <div class="fill-block">
-          <div class="fill-label">使用デバイス・サービス <span class="required">必須</span></div>
-          <div class="fill-hint">各ペルソナが日常的に使うデバイス、SNS、Webサービス、情報収集の方法を整理</div>
-          <div class="fill-content">
-            <section class="persona-group" aria-labelledby="digital-main-users">
-              <h3 class="persona-group-title" id="digital-main-users">メインユーザー</h3>
-              <div class="persona-grid">
-                <article class="persona-card">
-                  <div class="persona-role">Main User</div>
-                  <h4 class="persona-name">佐藤 恒一</h4>
-                  <p class="persona-job">株式会社アクトリンク 人事部 採用担当主任</p>
-                  <p class="persona-story-title">メインデバイス</p>
-                  <ul class="persona-detail-list">
-                    <li>iPhone 15</li>
-                    <li>会社支給のWindowsノートPC</li>
-                  </ul>
-                  <p class="persona-story-title" style="margin-top: 14px;">よく使うSNS</p>
-                  <ul class="persona-detail-list">
-                    <li><strong>X：</strong>1日2〜3回。採用や人事関連の最新情報を流し見するため</li>
-                    <li><strong>Instagram：</strong>週に数回。家族向け情報や気分転換のため</li>
-                    <li><strong>LINE：</strong>毎日。家族や友人との連絡のため</li>
-                  </ul>
-                  <p class="persona-story-title" style="margin-top: 14px;">よく使うWebサービス・アプリ</p>
-                  <ul class="persona-detail-list">
-                    <li>Gmail</li>
-                    <li>Googleカレンダー</li>
-                    <li>Slack</li>
-                    <li>採用管理システム</li>
-                    <li>求人媒体サイト</li>
-                    <li>note</li>
-                    <li>ニュースアプリ</li>
-                  </ul>
-                  <p class="persona-story-title" style="margin-top: 14px;">情報収集の方法</p>
-                  <p class="persona-story">通勤中や昼休みにスマホで人事・採用関連の記事を読むことが多い。仕事中はPCで求人媒体や採用管理システムを確認し、業界動向はニュースアプリやXで把握している。</p>
-                </article>
+          <div class="fill-block">
+            <div class="fill-label">使用デバイス・サービス <span class="required">必須</span></div>
+            <div class="fill-hint">各ペルソナが日常的に使うデバイス、SNS、Webサービス、情報収集の方法を整理</div>
+            <div class="fill-content">
+              <section class="persona-group" aria-labelledby="digital-main-users">
+                <h3 class="persona-group-title" id="digital-main-users">メインユーザー</h3>
+                <div class="persona-grid">
+                  <article class="persona-card">
+                    <div class="persona-role">Main User</div>
+                    <h4 class="persona-name">佐藤 恒一</h4>
+                    <p class="persona-job">株式会社アクトリンク 人事部 採用担当主任</p>
+                    <p class="persona-story-title">メインデバイス</p>
+                    <ul class="persona-detail-list">
+                      <li>iPhone 15</li>
+                      <li>会社支給のWindowsノートPC</li>
+                    </ul>
+                    <p class="persona-story-title" style="margin-top: 14px;">よく使うSNS</p>
+                    <ul class="persona-detail-list">
+                      <li><strong>X：</strong>1日2〜3回。採用や人事関連の最新情報を流し見するため</li>
+                      <li><strong>Instagram：</strong>週に数回。家族向け情報や気分転換のため</li>
+                      <li><strong>LINE：</strong>毎日。家族や友人との連絡のため</li>
+                    </ul>
+                    <p class="persona-story-title" style="margin-top: 14px;">よく使うWebサービス・アプリ</p>
+                    <ul class="persona-detail-list">
+                      <li>Gmail</li>
+                      <li>Googleカレンダー</li>
+                      <li>Slack</li>
+                      <li>採用管理システム</li>
+                      <li>求人媒体サイト</li>
+                      <li>note</li>
+                      <li>ニュースアプリ</li>
+                    </ul>
+                    <p class="persona-story-title" style="margin-top: 14px;">情報収集の方法</p>
+                    <p class="persona-story">
+                      通勤中や昼休みにスマホで人事・採用関連の記事を読むことが多い。仕事中はPCで求人媒体や採用管理システムを確認し、業界動向はニュースアプリやXで把握している。</p>
+                  </article>
 
-                <article class="persona-card">
-                  <div class="persona-role">Main User</div>
-                  <h4 class="persona-name">中村 美咲</h4>
-                  <p class="persona-job">株式会社リーフデザイン 経営管理部 人事・採用マネージャー</p>
-                  <p class="persona-story-title">メインデバイス</p>
-                  <ul class="persona-detail-list">
-                    <li>iPhone 14 Pro</li>
-                    <li>MacBook Air</li>
-                    <li>会社支給のWindowsノートPC</li>
-                  </ul>
-                  <p class="persona-story-title" style="margin-top: 14px;">よく使うSNS</p>
-                  <ul class="persona-detail-list">
-                    <li><strong>Instagram：</strong>毎日。デザイン、働き方、ライフスタイル情報の収集のため</li>
-                    <li><strong>Pinterest：</strong>週に数回。ビジュアルや表現の参考を見るため</li>
-                    <li><strong>X：</strong>1日1〜2回。採用トレンドやクリエイティブ業界の話題収集のため</li>
-                    <li><strong>LINE：</strong>毎日。家族や仕事関係者との連絡のため</li>
-                  </ul>
-                  <p class="persona-story-title" style="margin-top: 14px;">よく使うWebサービス・アプリ</p>
-                  <ul class="persona-detail-list">
-                    <li>Slack</li>
-                    <li>Google Meet</li>
-                    <li>Zoom</li>
-                    <li>Notion</li>
-                    <li>Googleスプレッドシート</li>
-                    <li>Instagram</li>
-                    <li>Pinterest</li>
-                    <li>採用管理システム</li>
-                  </ul>
-                  <p class="persona-story-title" style="margin-top: 14px;">情報収集の方法</p>
-                  <p class="persona-story">SNSで業界の空気感やデザイン事例を見つつ、採用関連はnoteやWebメディアで確認している。候補者管理や情報整理はPC中心で、日常のヒント収集はスマホ中心。</p>
-                </article>
-              </div>
-            </section>
+                  <article class="persona-card">
+                    <div class="persona-role">Main User</div>
+                    <h4 class="persona-name">中村 美咲</h4>
+                    <p class="persona-job">株式会社リーフデザイン 経営管理部 人事・採用マネージャー</p>
+                    <p class="persona-story-title">メインデバイス</p>
+                    <ul class="persona-detail-list">
+                      <li>iPhone 14 Pro</li>
+                      <li>MacBook Air</li>
+                      <li>会社支給のWindowsノートPC</li>
+                    </ul>
+                    <p class="persona-story-title" style="margin-top: 14px;">よく使うSNS</p>
+                    <ul class="persona-detail-list">
+                      <li><strong>Instagram：</strong>毎日。デザイン、働き方、ライフスタイル情報の収集のため</li>
+                      <li><strong>Pinterest：</strong>週に数回。ビジュアルや表現の参考を見るため</li>
+                      <li><strong>X：</strong>1日1〜2回。採用トレンドやクリエイティブ業界の話題収集のため</li>
+                      <li><strong>LINE：</strong>毎日。家族や仕事関係者との連絡のため</li>
+                    </ul>
+                    <p class="persona-story-title" style="margin-top: 14px;">よく使うWebサービス・アプリ</p>
+                    <ul class="persona-detail-list">
+                      <li>Slack</li>
+                      <li>Google Meet</li>
+                      <li>Zoom</li>
+                      <li>Notion</li>
+                      <li>Googleスプレッドシート</li>
+                      <li>Instagram</li>
+                      <li>Pinterest</li>
+                      <li>採用管理システム</li>
+                    </ul>
+                    <p class="persona-story-title" style="margin-top: 14px;">情報収集の方法</p>
+                    <p class="persona-story">
+                      SNSで業界の空気感やデザイン事例を見つつ、採用関連はnoteやWebメディアで確認している。候補者管理や情報整理はPC中心で、日常のヒント収集はスマホ中心。</p>
+                  </article>
+                </div>
+              </section>
 
-            <section class="persona-group" aria-labelledby="digital-sub-users">
-              <h3 class="persona-group-title" id="digital-sub-users">サブユーザー</h3>
-              <div class="persona-grid">
-                <article class="persona-card">
-                  <div class="persona-role">Sub User</div>
-                  <h4 class="persona-name">田村 恒一</h4>
-                  <p class="persona-job">株式会社東洋フーズ 営業部 主任</p>
-                  <p class="persona-story-title">メインデバイス</p>
-                  <ul class="persona-detail-list">
-                    <li>iPhone 13</li>
-                    <li>自宅用のWindowsノートPC</li>
-                  </ul>
-                  <p class="persona-story-title" style="margin-top: 14px;">よく使うSNS</p>
-                  <ul class="persona-detail-list">
-                    <li><strong>LINE：</strong>毎日。家族や友人との連絡のため</li>
-                    <li><strong>YouTube：</strong>毎日。スポーツ、転職体験談、気分転換のため</li>
-                    <li><strong>X：</strong>週に数回。ニュースや話題のチェックのため</li>
-                  </ul>
-                  <p class="persona-story-title" style="margin-top: 14px;">よく使うWebサービス・アプリ</p>
-                  <ul class="persona-detail-list">
-                    <li>転職サイトアプリ</li>
-                    <li>求人検索サービス</li>
-                    <li>メモアプリ</li>
-                    <li>ニュースアプリ</li>
-                    <li>YouTube</li>
-                    <li>Google検索</li>
-                  </ul>
-                  <p class="persona-story-title" style="margin-top: 14px;">情報収集の方法</p>
-                  <p class="persona-story">通勤中や夜の空き時間にスマホで求人や転職体験談をチェックしている。応募を検討する段階になると、自宅PCで企業HPや求人詳細をじっくり確認する。</p>
-                </article>
+              <section class="persona-group" aria-labelledby="digital-sub-users">
+                <h3 class="persona-group-title" id="digital-sub-users">サブユーザー</h3>
+                <div class="persona-grid">
+                  <article class="persona-card">
+                    <div class="persona-role">Sub User</div>
+                    <h4 class="persona-name">田村 恒一</h4>
+                    <p class="persona-job">株式会社東洋フーズ 営業部 主任</p>
+                    <p class="persona-story-title">メインデバイス</p>
+                    <ul class="persona-detail-list">
+                      <li>iPhone 13</li>
+                      <li>自宅用のWindowsノートPC</li>
+                    </ul>
+                    <p class="persona-story-title" style="margin-top: 14px;">よく使うSNS</p>
+                    <ul class="persona-detail-list">
+                      <li><strong>LINE：</strong>毎日。家族や友人との連絡のため</li>
+                      <li><strong>YouTube：</strong>毎日。スポーツ、転職体験談、気分転換のため</li>
+                      <li><strong>X：</strong>週に数回。ニュースや話題のチェックのため</li>
+                    </ul>
+                    <p class="persona-story-title" style="margin-top: 14px;">よく使うWebサービス・アプリ</p>
+                    <ul class="persona-detail-list">
+                      <li>転職サイトアプリ</li>
+                      <li>求人検索サービス</li>
+                      <li>メモアプリ</li>
+                      <li>ニュースアプリ</li>
+                      <li>YouTube</li>
+                      <li>Google検索</li>
+                    </ul>
+                    <p class="persona-story-title" style="margin-top: 14px;">情報収集の方法</p>
+                    <p class="persona-story">通勤中や夜の空き時間にスマホで求人や転職体験談をチェックしている。応募を検討する段階になると、自宅PCで企業HPや求人詳細をじっくり確認する。</p>
+                  </article>
 
-                <article class="persona-card">
-                  <div class="persona-role">Sub User</div>
-                  <h4 class="persona-name">石井 由美</h4>
-                  <p class="persona-job">株式会社サンライトケア 事務部 医療事務スタッフ</p>
-                  <p class="persona-story-title">メインデバイス</p>
-                  <ul class="persona-detail-list">
-                    <li>iPhone 12</li>
-                    <li>自宅用ノートPC</li>
-                  </ul>
-                  <p class="persona-story-title" style="margin-top: 14px;">よく使うSNS</p>
-                  <ul class="persona-detail-list">
-                    <li><strong>LINE：</strong>毎日。家族との連絡のため</li>
-                    <li><strong>YouTube：</strong>毎日。料理、生活情報、転職関連動画を見るため</li>
-                    <li><strong>Instagram：</strong>週に数回。雑貨や生活情報を見るため</li>
-                  </ul>
-                  <p class="persona-story-title" style="margin-top: 14px;">よく使うWebサービス・アプリ</p>
-                  <ul class="persona-detail-list">
-                    <li>求人サイト</li>
-                    <li>検索エンジン</li>
-                    <li>YouTube</li>
-                    <li>家計アプリ</li>
-                    <li>メモアプリ</li>
-                    <li>企業の採用ページ</li>
-                  </ul>
-                  <p class="persona-story-title" style="margin-top: 14px;">情報収集の方法</p>
-                  <p class="persona-story">スマホで検索して同年代の転職体験や働き方の記事を読むことが多い。応募を意識し始めると、PCで職務経歴書や自己PRを整理しながら求人を比較する。</p>
-                </article>
-              </div>
-            </section>
+                  <article class="persona-card">
+                    <div class="persona-role">Sub User</div>
+                    <h4 class="persona-name">石井 由美</h4>
+                    <p class="persona-job">株式会社サンライトケア 事務部 医療事務スタッフ</p>
+                    <p class="persona-story-title">メインデバイス</p>
+                    <ul class="persona-detail-list">
+                      <li>iPhone 12</li>
+                      <li>自宅用ノートPC</li>
+                    </ul>
+                    <p class="persona-story-title" style="margin-top: 14px;">よく使うSNS</p>
+                    <ul class="persona-detail-list">
+                      <li><strong>LINE：</strong>毎日。家族との連絡のため</li>
+                      <li><strong>YouTube：</strong>毎日。料理、生活情報、転職関連動画を見るため</li>
+                      <li><strong>Instagram：</strong>週に数回。雑貨や生活情報を見るため</li>
+                    </ul>
+                    <p class="persona-story-title" style="margin-top: 14px;">よく使うWebサービス・アプリ</p>
+                    <ul class="persona-detail-list">
+                      <li>求人サイト</li>
+                      <li>検索エンジン</li>
+                      <li>YouTube</li>
+                      <li>家計アプリ</li>
+                      <li>メモアプリ</li>
+                      <li>企業の採用ページ</li>
+                    </ul>
+                    <p class="persona-story-title" style="margin-top: 14px;">情報収集の方法</p>
+                    <p class="persona-story">スマホで検索して同年代の転職体験や働き方の記事を読むことが多い。応募を意識し始めると、PCで職務経歴書や自己PRを整理しながら求人を比較する。</p>
+                  </article>
+                </div>
+              </section>
+            </div>
           </div>
-        </div>
 
         </section>
         <section class="section" id="sec4">
           <h2 class="section-title"><span class="section-icon">4</span> 課題とニーズ</h2>
 
-        <div class="fill-block">
-          <div class="fill-label">抱えている課題・悩み <span class="required">必須</span></div>
-          <div class="fill-hint">このペルソナが日常で抱えている課題（サービスに関連するもの）</div>
-          <div class="fill-content">
-            <section class="persona-group" aria-labelledby="needs-main-issues">
-              <h3 class="persona-group-title" id="needs-main-issues">メインユーザー</h3>
-              <div class="persona-grid">
-                <article class="persona-card">
-                  <div class="persona-role">Main User</div>
-                  <h4 class="persona-name">佐藤 恒一</h4>
-                  <p class="persona-job">株式会社アクトリンク 人事部 採用担当主任</p>
-                  <ul class="persona-note-list">
-                    <li>書類だけでは候補者の人柄や価値観が分からない</li>
-                    <li>採用業務に十分な時間をかけられない</li>
-                    <li>採用後のミスマッチが起こることがある</li>
-                  </ul>
-                </article>
+          <div class="fill-block">
+            <div class="fill-label">抱えている課題・悩み <span class="required">必須</span></div>
+            <div class="fill-hint">このペルソナが日常で抱えている課題（サービスに関連するもの）</div>
+            <div class="fill-content">
+              <section class="persona-group" aria-labelledby="needs-main-issues">
+                <h3 class="persona-group-title" id="needs-main-issues">メインユーザー</h3>
+                <div class="persona-grid">
+                  <article class="persona-card">
+                    <div class="persona-role">Main User</div>
+                    <h4 class="persona-name">佐藤 恒一</h4>
+                    <p class="persona-job">株式会社アクトリンク 人事部 採用担当主任</p>
+                    <ul class="persona-note-list">
+                      <li>書類だけでは候補者の人柄や価値観が分からない</li>
+                      <li>採用業務に十分な時間をかけられない</li>
+                      <li>採用後のミスマッチが起こることがある</li>
+                    </ul>
+                  </article>
 
-                <article class="persona-card">
-                  <div class="persona-role">Main User</div>
-                  <h4 class="persona-name">中村 美咲</h4>
-                  <p class="persona-job">株式会社リーフデザイン 経営管理部 人事・採用マネージャー</p>
-                  <ul class="persona-note-list">
-                    <li>ポートフォリオだけでは候補者の人柄や協働性が分からない</li>
-                    <li>チームに合う人材かどうかを事前に判断しづらい</li>
-                    <li>採用業務と通常業務の両立が難しい</li>
-                  </ul>
-                </article>
-              </div>
-            </section>
+                  <article class="persona-card">
+                    <div class="persona-role">Main User</div>
+                    <h4 class="persona-name">中村 美咲</h4>
+                    <p class="persona-job">株式会社リーフデザイン 経営管理部 人事・採用マネージャー</p>
+                    <ul class="persona-note-list">
+                      <li>ポートフォリオだけでは候補者の人柄や協働性が分からない</li>
+                      <li>チームに合う人材かどうかを事前に判断しづらい</li>
+                      <li>採用業務と通常業務の両立が難しい</li>
+                    </ul>
+                  </article>
+                </div>
+              </section>
 
-            <section class="persona-group" aria-labelledby="needs-sub-issues">
-              <h3 class="persona-group-title" id="needs-sub-issues">サブユーザー</h3>
-              <div class="persona-grid">
-                <article class="persona-card">
-                  <div class="persona-role">Sub User</div>
-                  <h4 class="persona-name">田村 恒一</h4>
-                  <p class="persona-job">株式会社東洋フーズ 営業部 主任</p>
-                  <ul class="persona-note-list">
-                    <li>自分の強みが書類だけでは伝わりにくい</li>
-                    <li>年齢的に転職市場で不利にならないか不安</li>
-                    <li>家族がいるため転職の失敗が怖い</li>
-                  </ul>
-                </article>
+              <section class="persona-group" aria-labelledby="needs-sub-issues">
+                <h3 class="persona-group-title" id="needs-sub-issues">サブユーザー</h3>
+                <div class="persona-grid">
+                  <article class="persona-card">
+                    <div class="persona-role">Sub User</div>
+                    <h4 class="persona-name">田村 恒一</h4>
+                    <p class="persona-job">株式会社東洋フーズ 営業部 主任</p>
+                    <ul class="persona-note-list">
+                      <li>自分の強みが書類だけでは伝わりにくい</li>
+                      <li>年齢的に転職市場で不利にならないか不安</li>
+                      <li>家族がいるため転職の失敗が怖い</li>
+                    </ul>
+                  </article>
 
-                <article class="persona-card">
-                  <div class="persona-role">Sub User</div>
-                  <h4 class="persona-name">石井 由美</h4>
-                  <p class="persona-job">株式会社サンライトケア 事務部 医療事務スタッフ</p>
-                  <ul class="persona-note-list">
-                    <li>年齢や経歴だけで判断されそうで不安</li>
-                    <li>自己PRがうまく書けない</li>
-                    <li>家庭と両立できる職場が見つかるか心配</li>
-                  </ul>
-                </article>
-              </div>
-            </section>
+                  <article class="persona-card">
+                    <div class="persona-role">Sub User</div>
+                    <h4 class="persona-name">石井 由美</h4>
+                    <p class="persona-job">株式会社サンライトケア 事務部 医療事務スタッフ</p>
+                    <ul class="persona-note-list">
+                      <li>年齢や経歴だけで判断されそうで不安</li>
+                      <li>自己PRがうまく書けない</li>
+                      <li>家庭と両立できる職場が見つかるか心配</li>
+                    </ul>
+                  </article>
+                </div>
+              </section>
+            </div>
           </div>
-        </div>
-        <div class="fill-block">
-          <div class="fill-label">サービスに期待すること <span class="required">必須</span></div>
-          <div class="fill-hint">このペルソナが（サービス名）に期待する価値</div>
-          <div class="fill-content">
-            <section class="persona-group" aria-labelledby="needs-main-expectation">
-              <h3 class="persona-group-title" id="needs-main-expectation">メインユーザー</h3>
-              <div class="persona-grid">
-                <article class="persona-card">
-                  <div class="persona-role">Main User</div>
-                  <h4 class="persona-name">佐藤 恒一</h4>
-                  <p class="persona-job">株式会社アクトリンク 人事部 採用担当主任</p>
-                  <ul class="persona-detail-list">
-                    <li><strong>候補者の人柄や価値観を、面接前に把握できること</strong><br>書類だけでは分からない人物像を事前に理解できれば、限られた選考時間の中でも判断の精度を高められるため。</li>
-                    <li><strong>面接で確認すべきポイントが見えやすくなること</strong><br>候補者のストーリーや仕事観が見えることで、表面的な質問ではなく、本質的な対話につなげやすくなるため。</li>
-                    <li><strong>採用後のミスマッチを減らせること</strong><br>スキルや経歴だけでなく、人柄や相性も含めて判断できることで、入社後の「思っていた人と違う」を防ぎやすくなるため。</li>
-                  </ul>
-                </article>
+          <div class="fill-block">
+            <div class="fill-label">サービスに期待すること <span class="required">必須</span></div>
+            <div class="fill-hint">このペルソナが（サービス名）に期待する価値</div>
+            <div class="fill-content">
+              <section class="persona-group" aria-labelledby="needs-main-expectation">
+                <h3 class="persona-group-title" id="needs-main-expectation">メインユーザー</h3>
+                <div class="persona-grid">
+                  <article class="persona-card">
+                    <div class="persona-role">Main User</div>
+                    <h4 class="persona-name">佐藤 恒一</h4>
+                    <p class="persona-job">株式会社アクトリンク 人事部 採用担当主任</p>
+                    <ul class="persona-detail-list">
+                      <li>
+                        <strong>候補者の人柄や価値観を、面接前に把握できること</strong><br>書類だけでは分からない人物像を事前に理解できれば、限られた選考時間の中でも判断の精度を高められるため。
+                      </li>
+                      <li><strong>面接で確認すべきポイントが見えやすくなること</strong><br>候補者のストーリーや仕事観が見えることで、表面的な質問ではなく、本質的な対話につなげやすくなるため。
+                      </li>
+                      <li><strong>採用後のミスマッチを減らせること</strong><br>スキルや経歴だけでなく、人柄や相性も含めて判断できることで、入社後の「思っていた人と違う」を防ぎやすくなるため。
+                      </li>
+                    </ul>
+                  </article>
 
-                <article class="persona-card">
-                  <div class="persona-role">Main User</div>
-                  <h4 class="persona-name">中村 美咲</h4>
-                  <p class="persona-job">株式会社リーフデザイン 経営管理部 人事・採用マネージャー</p>
-                  <ul class="persona-detail-list">
-                    <li><strong>ポートフォリオだけでは見えない人柄まで知れること</strong><br>作品の質だけでなく、候補者の考え方やチームでの関わり方が分かれば、採用判断がしやすくなるため。</li>
-                    <li><strong>チームとの相性を事前にイメージしやすくなること</strong><br>価値観や仕事への向き合い方が見えることで、スキルだけでは測れない「一緒に働くイメージ」を持ちやすくなるため。</li>
-                    <li><strong>現場メンバーと候補者理解を共有しやすくなること</strong><br>候補者の人となりが整理された形で見えることで、採用担当と現場の判断基準をそろえやすくなるため。</li>
-                  </ul>
-                </article>
-              </div>
-            </section>
+                  <article class="persona-card">
+                    <div class="persona-role">Main User</div>
+                    <h4 class="persona-name">中村 美咲</h4>
+                    <p class="persona-job">株式会社リーフデザイン 経営管理部 人事・採用マネージャー</p>
+                    <ul class="persona-detail-list">
+                      <li><strong>ポートフォリオだけでは見えない人柄まで知れること</strong><br>作品の質だけでなく、候補者の考え方やチームでの関わり方が分かれば、採用判断がしやすくなるため。
+                      </li>
+                      <li>
+                        <strong>チームとの相性を事前にイメージしやすくなること</strong><br>価値観や仕事への向き合い方が見えることで、スキルだけでは測れない「一緒に働くイメージ」を持ちやすくなるため。
+                      </li>
+                      <li><strong>現場メンバーと候補者理解を共有しやすくなること</strong><br>候補者の人となりが整理された形で見えることで、採用担当と現場の判断基準をそろえやすくなるため。
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+              </section>
 
-            <section class="persona-group" aria-labelledby="needs-sub-expectation">
-              <h3 class="persona-group-title" id="needs-sub-expectation">サブユーザー</h3>
-              <div class="persona-grid">
-                <article class="persona-card">
-                  <div class="persona-role">Sub User</div>
-                  <h4 class="persona-name">田村 恒一</h4>
-                  <p class="persona-job">株式会社東洋フーズ 営業部 主任</p>
-                  <ul class="persona-detail-list">
-                    <li><strong>書類では伝わりにくい自分の強みを見てもらえること</strong><br>営業成績や肩書きだけでなく、誠実さや信頼関係を築く力も企業に伝われば、自分らしい評価を受けやすくなるため。</li>
-                    <li><strong>自分の人柄を整理して言語化できること</strong><br>これまで曖昧だった「自分の良さ」を整理できれば、応募や面接に対する自信につながるため。</li>
-                    <li><strong>相性を重視してくれる企業と出会えること</strong><br>条件だけでなく人柄を見てくれる企業とつながれれば、転職後の働きやすさや納得感が高まるため。</li>
-                  </ul>
-                </article>
+              <section class="persona-group" aria-labelledby="needs-sub-expectation">
+                <h3 class="persona-group-title" id="needs-sub-expectation">サブユーザー</h3>
+                <div class="persona-grid">
+                  <article class="persona-card">
+                    <div class="persona-role">Sub User</div>
+                    <h4 class="persona-name">田村 恒一</h4>
+                    <p class="persona-job">株式会社東洋フーズ 営業部 主任</p>
+                    <ul class="persona-detail-list">
+                      <li>
+                        <strong>書類では伝わりにくい自分の強みを見てもらえること</strong><br>営業成績や肩書きだけでなく、誠実さや信頼関係を築く力も企業に伝われば、自分らしい評価を受けやすくなるため。
+                      </li>
+                      <li><strong>自分の人柄を整理して言語化できること</strong><br>これまで曖昧だった「自分の良さ」を整理できれば、応募や面接に対する自信につながるため。</li>
+                      <li><strong>相性を重視してくれる企業と出会えること</strong><br>条件だけでなく人柄を見てくれる企業とつながれれば、転職後の働きやすさや納得感が高まるため。</li>
+                    </ul>
+                  </article>
 
-                <article class="persona-card">
-                  <div class="persona-role">Sub User</div>
-                  <h4 class="persona-name">石井 由美</h4>
-                  <p class="persona-job">株式会社サンライトケア 事務部 医療事務スタッフ</p>
-                  <ul class="persona-detail-list">
-                    <li><strong>年齢や資格だけで判断されずに済むこと</strong><br>丁寧さや気配り、仕事への姿勢まで見てもらえれば、書類だけで不利になる不安を和らげられるため。</li>
-                    <li><strong>自己PRが苦手でも、自分の魅力を伝えやすくなること</strong><br>サービス上で人柄や価値観を整理できれば、何を伝えればよいか分かりやすくなるため。</li>
-                    <li><strong>安心して働ける職場と出会いやすくなること</strong><br>自分の考え方や働き方を理解してくれる企業とつながれれば、無理のない転職につながるため。</li>
-                  </ul>
-                </article>
-              </div>
-            </section>
+                  <article class="persona-card">
+                    <div class="persona-role">Sub User</div>
+                    <h4 class="persona-name">石井 由美</h4>
+                    <p class="persona-job">株式会社サンライトケア 事務部 医療事務スタッフ</p>
+                    <ul class="persona-detail-list">
+                      <li><strong>年齢や資格だけで判断されずに済むこと</strong><br>丁寧さや気配り、仕事への姿勢まで見てもらえれば、書類だけで不利になる不安を和らげられるため。</li>
+                      <li><strong>自己PRが苦手でも、自分の魅力を伝えやすくなること</strong><br>サービス上で人柄や価値観を整理できれば、何を伝えればよいか分かりやすくなるため。</li>
+                      <li><strong>安心して働ける職場と出会いやすくなること</strong><br>自分の考え方や働き方を理解してくれる企業とつながれれば、無理のない転職につながるため。</li>
+                    </ul>
+                  </article>
+                </div>
+              </section>
+            </div>
           </div>
-        </div>
 
         </section>
 
@@ -913,6 +1165,5 @@
 
   <script src="../js/main.js"></script>
 </body>
+
 </html>
-
-

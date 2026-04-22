@@ -70,7 +70,14 @@
           <div class="fill-label">デザインキーワード <span class="required">必須</span></div>
           <div class="fill-hint">デザインの方向性を表すキーワード3つとその説明</div>
           <div class="fill-content">
-            <p>（デザインキーワード3つとその説明を記載）</p>
+        <table class="doc-table">
+          <thead><tr><th>キーワード</th><th>説明</th></tr></thead>
+          <tbody>
+          <tr class="template-row"><td>構造化（Structuring）</td><td>タグ・見出し・カード・CTAを体系的に配置し、情報を段階的に理解できるUIを設計。ユーザーが迷わず「人となり」に到達できる導線を構築している。</td></tr>
+          <tr class="template-row"><td>信頼性（Credibility）</td><td>配色・余白・タイポグラフィを整え、ビジネスサービスとして安心して利用できる印象をつくる。</td></tr>
+          <tr class="template-row"><td>人物理解（Human Insight）</td><td>経歴情報だけでなく、価値・背景・ストーリーが伝わる設計により、面接前の理解を深める。</td></tr>
+          </tbody>
+        </table>
           </div>
         </div>
 
@@ -129,7 +136,65 @@
           <div class="fill-label">ボタン <span class="required">必須</span></div>
           <div class="fill-hint">プライマリ・セカンダリ・デンジャーの3種類のボタンスタイル（実物のHTMLサンプル付き）</div>
           <div class="fill-content">
-            <p>（ここにボタンの実物サンプルとCSSコードを記載）</p>
+            <p>このサイト群では、各ページで最も押してほしい主CTAをプライマリ、主導線を補助する導線をセカンダリとして設計している。index.html、service.html、for-job-seeker-service.html を確認した範囲では、削除や取消不能操作に当たるデンジャーボタンは使用されていない。</p>
+        <table class="doc-table">
+          <thead><tr><th style="width:6em;white-space:nowrap;">種類</th><th style="width:24%;">このサイトでの位置づけ</th><th style="width:46%;">該当例</th></tr></thead>
+          <tbody>
+          <tr class="template-row"><td style="width:6em;white-space:nowrap;">プライマリ</td><td style="width:24%;">各ページで最も押してほしい主CTA</td><td style="width:46%;">「採用担当の方はこちら」「求職者の方はこちら」「お問い合わせ」「お問合せ」「さっそく自分を整理してみる」</td></tr>
+          <tr class="template-row"><td style="width:6em;white-space:nowrap;">セカンダリ</td><td style="width:24%;">主導線を補助する導線</td><td style="width:46%;">「採用担当の方はこちら」「求職者の方はこちら」「ログイン」</td></tr>
+          <tr class="template-row"><td style="width:6em;white-space:nowrap;">デンジャー</td><td style="width:24%;">対象ページでは未使用</td><td style="width:46%;">該当ボタンなし</td></tr>
+          </tbody>
+        </table>
+            <style>
+              .button-sample-row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin: 16px 0;
+              }
+
+              .button-sample-chip {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 20px;
+                border-radius: 12px;
+                font-weight: 700;
+                line-height: 1.2;
+              }
+
+              .button-sample-primary {
+                background: linear-gradient(135deg, #E9A23B 0%, #C9821E 100%);
+                color: #FFFFFF;
+                box-shadow: 0 12px 24px rgba(201, 130, 30, 0.22);
+              }
+
+              .button-sample-secondary {
+                background: #FFFFFF;
+                color: #2B2F38;
+                border: 2px solid #E9A23B;
+                box-shadow: 0 8px 20px rgba(31, 41, 55, 0.06);
+              }
+
+              .button-sample-login {
+                background: rgba(238, 242, 255, 0.95);
+                color: #2563EB;
+                border: 1px solid rgba(59, 130, 246, 0.16);
+              }
+            </style>
+            <div class="button-sample-row">
+              <span class="button-sample-chip button-sample-primary">採用担当の方はこちら</span>
+              <span class="button-sample-chip button-sample-secondary">求職者の方はこちら</span>
+              <span class="button-sample-chip button-sample-primary">お問い合わせ</span>
+              <span class="button-sample-chip button-sample-login">ログイン</span>
+            </div>
+            <pre><code>&lt;div class="button-sample-row"&gt;
+  &lt;span class="button-sample-chip button-sample-primary"&gt;採用担当の方はこちら&lt;/span&gt;
+  &lt;span class="button-sample-chip button-sample-secondary"&gt;求職者の方はこちら&lt;/span&gt;
+  &lt;span class="button-sample-chip button-sample-primary"&gt;お問い合わせ&lt;/span&gt;
+  &lt;span class="button-sample-chip button-sample-login"&gt;ログイン&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+            <p>デンジャーは現状の対象ページでは未使用。</p>
           </div>
         </div>
         <div class="fill-block">

@@ -201,7 +201,101 @@
           <div class="fill-label">フォーム要素 <span class="required">必須</span></div>
           <div class="fill-hint">テキスト入力・セレクト・テキストエリア・チェックボックス・ラジオボタン（実物のHTMLサンプル付き）</div>
           <div class="fill-content">
-            <p>（ここにフォーム要素の実物サンプルとCSSコードを記載）</p>
+            <p>フォーム要素は単なる入力UIとしてではなく、AIとの対話を通じてユーザー理解が深まっていく過程そのものをデモとして設計している。 また、回答内容をトリガーにプロフィールのイラストや背景表現が変化する仕組みを取り入れることで、入力から可視化までを一体化したUXとして構築した。</p>
+        <table class="doc-table">
+          <thead><tr><th>観点</th><th>短い説明</th></tr></thead>
+          <tbody>
+          <tr class="template-row"><td>UI</td><td>直感的に操作でき、迷わず回答できるシンプルな入力構成</td></tr>
+          <tr class="template-row"><td>UX</td><td>回答内容が次画面の表現変化につながる体験設計</td></tr>
+          <tr class="template-row"><td>特徴</td><td>フォーム入力を自己理解を深めるプロセスとして設計</td></tr>
+          <tr class="template-row"><td>技術設計</td><td>回答内容をトリガーに、背景・イラスト・テーマを動的に切り替える構造</td></tr>
+          <tr class="template-row"><td>評価ポイント</td><td>入力から表示変化までを一連の体験として設計している点</td></tr>
+          </tbody>
+        </table>
+            <style>
+              .form-sample-grid {
+                display: grid;
+                gap: 16px;
+                margin: 16px 0;
+              }
+
+              .form-sample-field {
+                display: grid;
+                gap: 8px;
+              }
+
+              .form-sample-label {
+                color: #AA7D1D;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: 0.06em;
+              }
+
+              .form-sample-input {
+                width: 100%;
+                border: 1px solid #E2E8F0;
+                border-radius: 16px;
+                padding: 12px 16px;
+                color: #111111;
+                background: #FFFFFF;
+              }
+
+              .form-sample-input::placeholder {
+                color: #94A3B8;
+              }
+
+              .form-sample-readonly {
+                border: 1px solid #E2E8F0;
+                border-radius: 12px;
+                padding: 12px 16px;
+                color: #111111;
+                background: #F8FAFC;
+              }
+            </style>
+            <div class="form-sample-grid">
+              <div class="form-sample-field">
+                <span class="form-sample-label">名前</span>
+                <div class="form-sample-readonly">山本 美咲</div>
+              </div>
+              <div class="form-sample-field">
+                <span class="form-sample-label">メッセージ入力</span>
+                <input class="form-sample-input" placeholder="AIとの対話は「はい」を押すと始まります" type="text"/>
+              </div>
+            </div>
+            <pre><code>&lt;div class="form-sample-field"&gt;
+  &lt;span class="form-sample-label"&gt;名前&lt;/span&gt;
+  &lt;div class="form-sample-readonly"&gt;山本 美咲&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="form-sample-field"&gt;
+  &lt;span class="form-sample-label"&gt;メッセージ入力&lt;/span&gt;
+  &lt;input class="form-sample-input" type="text" placeholder="AIとの対話は「はい」を押すと始まります"&gt;
+&lt;/div&gt;</code></pre>
+            <pre><code>.form-sample-field {
+  display: grid;
+  gap: 8px;
+}
+
+.form-sample-label {
+  color: #AA7D1D;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.form-sample-input {
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 12px 16px;
+  background: #FFFFFF;
+}
+
+.form-sample-readonly {
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: #F8FAFC;
+}</code></pre>
           </div>
         </div>
         <div class="fill-block">

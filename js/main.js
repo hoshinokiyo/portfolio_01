@@ -48,7 +48,7 @@ function generateNavigation() {
       </div>
       <div class="nav-group">
         <div class="nav-group-title">制作ドキュメント</div>
-        <a href="${docsPath}01-proposal.html"><span class="nav-number">01</span> 企画提案書</a>
+        <a href="${docsPath}index.html"><span class="nav-number">01</span> 企画提案書</a>
         <a href="${docsPath}02-market-research.html"><span class="nav-number">02</span> マーケットリサーチ</a>
         <a href="${docsPath}03-persona.html"><span class="nav-number">03</span> ペルソナシート</a>
         <a href="${docsPath}04-sitemap.html"><span class="nav-number">04</span> サイトマップ</a>
@@ -114,9 +114,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Set active nav item based on current page
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPath = window.location.pathname.replace(/\\/g, '/');
+  const currentPage = currentPath.split('/').pop() || 'index.html';
+  const isIndexPage = currentPage === 'index.html';
+  const isDocsIndexPage = isIndexPage && currentPath.includes('/docs/');
+  const isRootIndexPage = isIndexPage && !isDocsIndexPage;
   document.querySelectorAll('.sidebar-nav a').forEach(link => {
     const href = link.getAttribute('href');
+    if (!href) return;
+
+    if (isDocsIndexPage) {
+      if (href === './index.html' || href === 'index.html') {
+        link.classList.add('active');
+      }
+      return;
+    }
+
+    if (isRootIndexPage) {
+      if (href === './index.html' || href === 'index.html') {
+        link.classList.add('active');
+      }
+      return;
+    }
+
     if (href && (href.endsWith(currentPage) || (currentPage === 'index.html' && href === './index.html'))) {
       link.classList.add('active');
     }

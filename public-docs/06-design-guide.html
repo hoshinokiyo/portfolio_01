@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>デザインガイドライン - プロジェクトアーカイブ</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <button class="hamburger" aria-label="メニュー">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="page-wrapper">
+    <aside class="sidebar" data-nav-level="docs"></aside>
+
+    <main class="main-content">
+      <header class="doc-header">
+        <div class="doc-category">DOCUMENT 06</div>
+        <h1 class="doc-title">デザインガイドライン</h1>
+        <div class="doc-meta">
+          <span><span class="material-symbols-outlined icon-sm">calendar_today</span> 作成日：2026-XX-XX</span>
+          <span><span class="material-symbols-outlined icon-sm">person</span> 作成者：（氏名を入力）</span>
+          <span><span class="material-symbols-outlined icon-sm">push_pin</span> Ver 1.0</span>
+        </div>
+      </header>
+
+      <div class="doc-body">
+
+        <div class="external-link-box">
+          <div class="external-link-box-title">
+            <span class="material-symbols-outlined">link</span>
+            詳細ドキュメント（Google スプレッドシート）
+          </div>
+          <div class="external-link-box-desc">
+            このページは概要のみを記載しています。詳細なデザインガイドラインは以下のリンクからご確認ください。
+          </div>
+          <div class="external-link-input">
+            <input type="text" placeholder="https://docs.google.com/spreadsheets/d/xxxxx" id="external-link-06">
+            <a href="#" class="link-btn"
+              onclick="window.open(document.getElementById('external-link-06').value || 'https://docs.google.com', '_blank'); return false;">
+              <span class="material-symbols-outlined">open_in_new</span>
+              開く
+            </a>
+          </div>
+        </div>
+
+        <div class="toc">
+          <div class="toc-title">目次</div>
+          <ol class="toc-list">
+            <li><a href="#sec1">デザインコンセプト</a></li>
+            <li><a href="#sec2">カラーパレット</a></li>
+            <li><a href="#sec3">タイポグラフィ</a></li>
+            <li><a href="#sec4">UIコンポーネント</a></li>
+            <li><a href="#sec5">レイアウトルール</a></li>
+          </ol>
+        </div>
+
+        <section class="section" id="sec1">
+          <h2 class="section-title"><span class="section-icon">1</span> デザインコンセプト</h2>
+
+          <div class="fill-block">
+            <div class="fill-label">デザインコンセプト <span class="required">必須</span></div>
+            <div class="fill-content">
+              <p>人となりを自然に伝え、理解と納得を生む採用体験を設計するUI/UXデザイン</p>
+            </div>
+          </div>
+
+          <div class="fill-block">
+            <div class="fill-label">ロゴデザイン <span class="required">必須</span></div>
+            <div class="fill-content">
+              <img src="./image/Logo.png" alt="ひととなり.ai のロゴ"
+                style="display:block;width:220px;max-width:100%;height:auto;margin:0 0 16px;">
+              <p>「と」と「な」に人の出会いの喜びを、「.ai（ドットアイ）」には“会い・逢い・合い・愛”とAIの意味を重ね、サービスのコンセプトを象徴するロゴとして設計。</p>
+            </div>
+          </div>
+
+          <div class="fill-block">
+            <div class="fill-label">デザインキーワード <span class="required">必須</span></div>
+            <div class="fill-hint">デザインの方向性を表すキーワード3つとその説明</div>
+            <div class="fill-content">
+              <table class="doc-table">
+                <thead>
+                  <tr>
+                    <th>キーワード</th>
+                    <th>説明</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="template-row">
+                    <td>構造化（Structuring）</td>
+                    <td>タグ・見出し・カード・CTAを体系的に配置し、情報を段階的に理解できるUIを設計。ユーザーが迷わず「人となり」に到達できる導線を構築している。</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td>信頼性（Credibility）</td>
+                    <td>配色・余白・タイポグラフィを整え、ビジネスサービスとして安心して利用できる印象をつくる。</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td>人物理解（Human Insight）</td>
+                    <td>経歴情報だけでなく、価値・背景・ストーリーが伝わる設計により、面接前の理解を深める。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="section" id="sec2">
+          <h2 class="section-title"><span class="section-icon">2</span> カラーパレット</h2>
+
+          <div class="fill-block">
+            <div class="fill-label">カラーパレット <span class="required">必須</span></div>
+            <div class="fill-hint">各色のHEXコード・使用場面を記載し、実際の色見本も表示してください</div>
+
+            <table class="doc-table">
+              <thead>
+                <tr>
+                  <th>色の種類</th>
+                  <th>カラーコード</th>
+                  <th>色見本</th>
+                  <th>使用イメージ</th>
+                  <th>使用場面</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="template-row">
+                  <td>メインカラー（信頼）</td>
+                  <td>#1E3A8A</td>
+                  <td><span
+                      style="display:inline-block;width:24px;height:24px;background:#1E3A8A;border-radius:4px;"></span>
+                  </td>
+                  <td>落ち着き・信頼感</td>
+                  <td>ヘッダー、ナビ、主要テキスト</td>
+                </tr>
+                <tr class="template-row">
+                  <td>サブカラー（背景）</td>
+                  <td>#FBF9F5</td>
+                  <td><span
+                      style="display:inline-block;width:24px;height:24px;background:#FBF9F5;border-radius:4px;"></span>
+                  </td>
+                  <td>やわらかさ・温かみ</td>
+                  <td>ページ背景、セクション背景</td>
+                </tr>
+                <tr class="template-row">
+                  <td>アクセント①（人となり）</td>
+                  <td>#F97316</td>
+                  <td><span
+                      style="display:inline-block;width:24px;height:24px;background:#F97316;border-radius:4px;"></span>
+                  </td>
+                  <td>温かさ・人間味</td>
+                  <td>見出し強調、CTA</td>
+                </tr>
+                <tr class="template-row">
+                  <td>アクセント②（整理・補助）</td>
+                  <td>#38BDF8</td>
+                  <td><span
+                      style="display:inline-block;width:24px;height:24px;background:#38BDF8;border-radius:4px;"></span>
+                  </td>
+                  <td>軽さ・整理感</td>
+                  <td>タグ、補助情報</td>
+                </tr>
+                <tr class="template-row">
+                  <td>アクセント③（感情）</td>
+                  <td>#F472B6</td>
+                  <td><span
+                      style="display:inline-block;width:24px;height:24px;background:#F472B6;border-radius:4px;"></span>
+                  </td>
+                  <td>共感・やさしさ</td>
+                  <td>ホバー、アイコン</td>
+                </tr>
+                <tr class="template-row">
+                  <td>テキスト（メイン）</td>
+                  <td>#1F2937</td>
+                  <td><span
+                      style="display:inline-block;width:24px;height:24px;background:#1F2937;border-radius:4px;"></span>
+                  </td>
+                  <td>可読性・安定</td>
+                  <td>本文テキスト</td>
+                </tr>
+                <tr class="template-row">
+                  <td>テキスト（サブ）</td>
+                  <td>#6B7280</td>
+                  <td><span
+                      style="display:inline-block;width:24px;height:24px;background:#6B7280;border-radius:4px;"></span>
+                  </td>
+                  <td>補助・説明</td>
+                  <td>説明文、注釈</td>
+                </tr>
+                <tr class="template-row">
+                  <td>ボーダー・区切り</td>
+                  <td>#E5E7EB</td>
+                  <td><span
+                      style="display:inline-block;width:24px;height:24px;background:#E5E7EB;border-radius:4px;"></span>
+                  </td>
+                  <td>整理・区切り</td>
+                  <td>カード枠、区切り線</td>
+                </tr>
+                <tr class="template-row">
+                  <td>背景アクセント</td>
+                  <td>#FFF7ED</td>
+                  <td><span
+                      style="display:inline-block;width:24px;height:24px;background:#FFF7ED;border-radius:4px;"></span>
+                  </td>
+                  <td>やさしい強調</td>
+                  <td>カード背景、CTA周り</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </section>
+
+        <section class="section" id="sec3">
+          <h2 class="section-title"><span class="section-icon">3</span> タイポグラフィ</h2>
+
+          <div class="fill-block">
+            <div class="fill-label">フォント設定 <span class="required">必須</span></div>
+            <table class="doc-table">
+              <thead>
+                <tr>
+                  <th>要素</th>
+                  <th>フォント名</th>
+                  <th>サイズ</th>
+                  <th>太さ</th>
+                  <th>行間</th>
+                  <th>用途</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="template-row">
+                  <td>h1（大見出し）</td>
+                  <td>"Noto Sans JP", sans-serif</td>
+                  <td>40px</td>
+                  <td>700（bold）</td>
+                  <td>1.3</td>
+                  <td>ページタイトル</td>
+                </tr>
+                <tr class="template-row">
+                  <td>h2（中見出し）</td>
+                  <td>"Noto Sans JP", sans-serif</td>
+                  <td>28px</td>
+                  <td>700（bold）</td>
+                  <td>1.4</td>
+                  <td>セクション見出し</td>
+                </tr>
+                <tr class="template-row">
+                  <td>h3（小見出し）</td>
+                  <td>"Noto Sans JP", sans-serif</td>
+                  <td>22px</td>
+                  <td>600（semibold）</td>
+                  <td>1.4</td>
+                  <td>サブセクション</td>
+                </tr>
+                <tr class="template-row">
+                  <td>本文</td>
+                  <td>"Noto Sans JP", sans-serif</td>
+                  <td>16px</td>
+                  <td>400（regular）</td>
+                  <td>1.7</td>
+                  <td>通常テキスト</td>
+                </tr>
+                <tr class="template-row">
+                  <td>キャプション</td>
+                  <td>"Noto Sans JP", sans-serif</td>
+                  <td>14px</td>
+                  <td>400（regular）</td>
+                  <td>1.6</td>
+                  <td>画像の説明等</td>
+                </tr>
+                <tr class="template-row">
+                  <td>ボタン</td>
+                  <td>"Noto Sans JP", sans-serif</td>
+                  <td>16px</td>
+                  <td>600（semibold）</td>
+                  <td>—</td>
+                  <td>ボタンテキスト</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </section>
+
+        <section class="section" id="sec4">
+          <h2 class="section-title"><span class="section-icon">4</span> UIコンポーネント</h2>
+
+
+          <div class="fill-block">
+            <div class="fill-label">ボタン <span class="required">必須</span></div>
+            <div class="fill-hint">プライマリ・セカンダリ・デンジャーの3種類のボタンスタイル（実物のHTMLサンプル付き）</div>
+            <div class="fill-content">
+              <p>
+                このサイト群では、各ページで最も押してほしい主CTAをプライマリ、主導線を補助する導線をセカンダリとして設計している。index.html、service.html、for-job-seeker-service.html
+                を確認した範囲では、削除や取消不能操作に当たるデンジャーボタンは使用されていない。</p>
+              <table class="doc-table">
+                <thead>
+                  <tr>
+                    <th style="width:6em;white-space:nowrap;">種類</th>
+                    <th style="width:24%;">このサイトでの位置づけ</th>
+                    <th style="width:46%;">該当例</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="template-row">
+                    <td style="width:6em;white-space:nowrap;">プライマリ</td>
+                    <td style="width:24%;">各ページで最も押してほしい主CTA</td>
+                    <td style="width:46%;">「採用担当の方はこちら」「求職者の方はこちら」「お問い合わせ」「お問合せ」「さっそく自分を整理してみる」</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td style="width:6em;white-space:nowrap;">セカンダリ</td>
+                    <td style="width:24%;">主導線を補助する導線</td>
+                    <td style="width:46%;">「採用担当の方はこちら」「求職者の方はこちら」「ログイン」</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td style="width:6em;white-space:nowrap;">デンジャー</td>
+                    <td style="width:24%;">対象ページでは未使用</td>
+                    <td style="width:46%;">該当ボタンなし</td>
+                  </tr>
+                </tbody>
+              </table>
+              <style>
+                .button-sample-row {
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 12px;
+                  margin: 16px 0;
+                }
+
+                .button-sample-chip {
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 12px 20px;
+                  border-radius: 12px;
+                  font-weight: 700;
+                  line-height: 1.2;
+                }
+
+                .button-sample-primary {
+                  background: linear-gradient(135deg, #E9A23B 0%, #C9821E 100%);
+                  color: #FFFFFF;
+                  box-shadow: 0 12px 24px rgba(201, 130, 30, 0.22);
+                }
+
+                .button-sample-secondary {
+                  background: #FFFFFF;
+                  color: #2B2F38;
+                  border: 2px solid #E9A23B;
+                  box-shadow: 0 8px 20px rgba(31, 41, 55, 0.06);
+                }
+
+                .button-sample-login {
+                  background: rgba(238, 242, 255, 0.95);
+                  color: #2563EB;
+                  border: 1px solid rgba(59, 130, 246, 0.16);
+                }
+              </style>
+              <div class="button-sample-row">
+                <span class="button-sample-chip button-sample-primary">採用担当の方はこちら</span>
+                <span class="button-sample-chip button-sample-secondary">求職者の方はこちら</span>
+                <span class="button-sample-chip button-sample-primary">お問い合わせ</span>
+                <span class="button-sample-chip button-sample-login">ログイン</span>
+              </div>
+              <pre><code>&lt;div class="button-sample-row"&gt;
+  &lt;span class="button-sample-chip button-sample-primary"&gt;採用担当の方はこちら&lt;/span&gt;
+  &lt;span class="button-sample-chip button-sample-secondary"&gt;求職者の方はこちら&lt;/span&gt;
+  &lt;span class="button-sample-chip button-sample-primary"&gt;お問い合わせ&lt;/span&gt;
+  &lt;span class="button-sample-chip button-sample-login"&gt;ログイン&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+              <p>デンジャーは現状の対象ページでは未使用。</p>
+            </div>
+          </div>
+          <div class="fill-block">
+            <div class="fill-label">フォーム要素 <span class="required">必須</span></div>
+            <div class="fill-hint">テキスト入力・セレクト・テキストエリア・チェックボックス・ラジオボタン（実物のHTMLサンプル付き）</div>
+            <div class="fill-content">
+              <p>フォーム要素は単なる入力UIとしてではなく、AIとの対話を通じてユーザー理解が深まっていく過程そのものをデモとして設計している。
+                また、回答内容をトリガーにプロフィールのイラストや背景表現が変化する仕組みを取り入れることで、入力から可視化までを一体化したUXとして構築した。</p>
+              <table class="doc-table">
+                <thead>
+                  <tr>
+                    <th>観点</th>
+                    <th>短い説明</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="template-row">
+                    <td>UI</td>
+                    <td>直感的に操作でき、迷わず回答できるシンプルな入力構成</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td>UX</td>
+                    <td>回答内容が次画面の表現変化につながる体験設計</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td>特徴</td>
+                    <td>フォーム入力を自己理解を深めるプロセスとして設計</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td>技術設計</td>
+                    <td>回答内容をトリガーに、背景・イラスト・テーマを動的に切り替える構造</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td>評価ポイント</td>
+                    <td>入力から表示変化までを一連の体験として設計している点</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--
+            <p>本デモでは、AIとの対話によって入力内容が変化し、プロフィール表現（背景・イラスト・テーマ）が切り替わる体験を確認できる。</p>
+            <p>入力から表示変化までを一連のUXとして設計している。</p>
+            <div style="margin:16px 0 20px;">
+              <iframe src="../../Portfolio_2026_kh/profile_demo.html" title="profile demo" loading="lazy" style="width:100%;height:300px;border:1px solid #E5E7EB;border-radius:12px;overflow:hidden;background:#FFFFFF;"></iframe>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin:0 0 16px;">
+              <div>
+                <p style="margin:0 0 8px;font-weight:700;">パターンA</p>
+                <iframe src="../../Portfolio_2026_kh/profile_private.html?theme=business" title="pattern a" loading="lazy" style="width:100%;height:220px;border:1px solid #E5E7EB;border-radius:12px;background:#FFFFFF;"></iframe>
+              </div>
+              <div>
+                <p style="margin:0 0 8px;font-weight:700;">パターンB</p>
+                <iframe src="../../Portfolio_2026_kh/profile_private.html?theme=analysis" title="pattern b" loading="lazy" style="width:100%;height:220px;border:1px solid #E5E7EB;border-radius:12px;background:#FFFFFF;"></iframe>
+              </div>
+              <div>
+                <p style="margin:0 0 8px;font-weight:700;">パターンC</p>
+                <iframe src="../../Portfolio_2026_kh/profile_private.html?theme=interest" title="pattern c" loading="lazy" style="width:100%;height:220px;border:1px solid #E5E7EB;border-radius:12px;background:#FFFFFF;"></iframe>
+              </div>
+            </div>
+            -->
+              <style>
+                .form-demo-wrapper {
+                  margin-top: 24px;
+                }
+
+                .form-demo-main img {
+                  width: 100%;
+                  border-radius: 12px;
+                  display: block;
+                }
+
+                .form-demo-variants {
+                  display: flex;
+                  gap: 16px;
+                  margin-top: 16px;
+                  flex-wrap: wrap;
+                }
+
+                .form-demo-variant {
+                  width: calc(33.33% - 11px);
+                }
+
+                .form-demo-variant-label {
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  min-width: 32px;
+                  height: 32px;
+                  margin-bottom: 8px;
+                  border-radius: 9999px;
+                  background: #E9A23B;
+                  color: #FFFFFF;
+                  font-size: 14px;
+                  font-weight: 700;
+                }
+
+                .form-demo-variant-copy {
+                  margin: 0 0 10px;
+                  color: #4B5563;
+                  font-size: 13px;
+                  line-height: 1.6;
+                }
+
+                .form-demo-variant img {
+                  width: 100%;
+                  border-radius: 12px;
+                  display: block;
+                }
+
+                @media (max-width: 767px) {
+                  .form-demo-variant {
+                    width: 100%;
+                  }
+                }
+              </style>
+              <div class="form-demo-wrapper">
+                <div class="form-demo-main">
+                  <img src="./image/demo-form-ai-input.png" alt="AI対話によるフォーム入力デモ">
+                </div>
+                <div class="form-demo-variants">
+                  <div class="form-demo-variant">
+                    <span class="form-demo-variant-label">A</span>
+                    <p class="form-demo-variant-copy">ビジネス寄りのプロフィール表現</p>
+                    <img src="./image/demo-profile-variants-a.png" alt="プロフィールパターンA">
+                  </div>
+                  <div class="form-demo-variant">
+                    <span class="form-demo-variant-label">B</span>
+                    <p class="form-demo-variant-copy">分析を軸にしたプロフィール表現</p>
+                    <img src="./image/demo-profile-variants-b.png" alt="プロフィールパターンB">
+                  </div>
+                  <div class="form-demo-variant">
+                    <span class="form-demo-variant-label">C</span>
+                    <p class="form-demo-variant-copy">興味・個性を活かしたプロフィール表現</p>
+                    <img src="./image/demo-profile-variants-c.png" alt="プロフィールパターンC">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fill-block">
+            <div class="fill-label">カード・テーブル・その他 <span class="required">必須</span></div>
+            <div class="fill-content">
+              <table class="doc-table">
+                <thead>
+                  <tr>
+                    <th>項目</th>
+                    <th>実装内容</th>
+                    <th>役割・意図</th>
+                    <th>UX上の効果</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="template-row">
+                    <td>タグ</td>
+                    <td>Heroや一部UIに配置したラベル要素</td>
+                    <td>情報の意味や特徴を短く直感的に伝える</td>
+                    <td>一目で内容を理解しやすい</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td>イラスト</td>
+                    <td>Heroやプロフィール表現に使用</td>
+                    <td>人となりやテーマの違いを視覚的に表現する</td>
+                    <td>印象が残りやすく、理解が深まる</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td>カード</td>
+                    <td>indexページHeroエリアのイラスト上に配置</td>
+                    <td>メインメッセージを補足し、視線誘導を行う</td>
+                    <td>情報の理解を自然に補助できる</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td>利用規約・プライバシーポリシーのアラート</td>
+                    <td>クリック時に確認メッセージを表示</td>
+                    <td>必須確認事項を見落とさないようにする</td>
+                    <td>入力前の安心感と注意喚起につながる</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td>初期設定時コメント</td>
+                    <td>デモ開始時に入力欄付近へ補助文を表示</td>
+                    <td>最初の行動を迷わず始められるようにする</td>
+                    <td>入力ハードルを下げる</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td>トリガー外選択時アラート</td>
+                    <td>想定外の選択時に補助メッセージを表示</td>
+                    <td>デモの分岐条件を自然に案内する</td>
+                    <td>誤操作時も迷いにくい</td>
+                  </tr>
+                  <tr class="template-row">
+                    <td>「はい」以外選択時アラート</td>
+                    <td>条件に合わない選択時に再案内する</td>
+                    <td>意図した体験導線へ戻せるようにする</td>
+                    <td>体験の流れを崩しにくい</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:16px;">
+                <img src="./image/tag.png" alt="タグの実物サンプル"
+                  style="display:block;flex:1 1 180px;min-width:0;width:calc(25% - 12px);max-width:calc(25% - 12px);border-radius:12px;">
+                <img src="./image/alert.png" alt="利用規約アラートの実物サンプル"
+                  style="display:block;flex:1 1 180px;min-width:0;width:calc(25% - 12px);max-width:calc(25% - 12px);border-radius:12px;">
+                <img src="./image/comment-init.png" alt="初期設定コメントの実物サンプル"
+                  style="display:block;flex:1 1 180px;min-width:0;width:calc(25% - 12px);max-width:calc(25% - 12px);border-radius:12px;">
+                <img src="./image/alert-trigger.png" alt="トリガー外選択時アラートの実物サンプル"
+                  style="display:block;flex:1 1 180px;min-width:0;width:calc(25% - 12px);max-width:calc(25% - 12px);border-radius:12px;">
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="section" id="sec5">
+          <h2 class="section-title"><span class="section-icon">5</span> レイアウトルール</h2>
+
+          <div class="fill-block">
+            <div class="fill-label">レイアウト基本ルール <span class="required">必須</span></div>
+            <div class="fill-hint">グリッド・余白・角丸・シャドウ等の数値ルール</div>
+            <div class="fill-content">
+              <p>全体はmax-w-7xl中心で中央寄せし、CTAのみmax-w-5xl、余白はpx-6、主要セクションはpy-24〜32、カードはp-8〜12、gap-6/8/12を基準とする。レイアウトは2・3・12カラムを使い分け、角丸はrounded-xl〜3xlと40px級、影は0 12px 32px rgba(...,0.06)前後の薄い設定で統一している。</p>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

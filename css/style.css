@@ -293,7 +293,7 @@ a:hover { color: var(--black); }
 
 .fill-hint {
   font-size: 13px;
-  color: var(--text-light);
+  color: var(--gray-700);
   margin-bottom: 12px;
   line-height: 1.6;
 }
@@ -305,7 +305,7 @@ a:hover { color: var(--black); }
   min-height: 48px;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--text-muted);
+  color: var(--black);
 }
 
 .fill-content p {
@@ -431,7 +431,7 @@ a:hover { color: var(--black); }
 
 /* template row */
 .doc-table .template-row td {
-  color: var(--text-muted);
+  color: var(--black);
   font-style: italic;
 }
 
